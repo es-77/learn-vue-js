@@ -7,7 +7,8 @@
   <!-- <ForLoop /> -->
   <!-- <MainLayOut /> -->
   <!-- <Styling /> -->
-  <InputDataBinding />
+  <!-- <InputDataBinding /> -->
+  <PropsDataPassing />
 </template>
 
 <script>
@@ -18,7 +19,8 @@
 // import ForLoop from './components/ForLoop.vue';
 // import MainLayOut from './components/layout/MainLayOut.vue';
 // import Styling from './components/Styling.vue';
-import InputDataBinding from './components/InputDataBinding.vue';
+// import InputDataBinding from './components/InputDataBinding.vue';
+import PropsDataPassing from './components/props/PropsDataPassing.vue';
 
 export default {
   name: 'App',
@@ -30,7 +32,8 @@ export default {
     // ForLoop
     // MainLayOut
     // Styling
-    InputDataBinding
+    // InputDataBinding
+    PropsDataPassing
   }
 };
 </script>
