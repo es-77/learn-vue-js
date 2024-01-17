@@ -9,7 +9,8 @@
   <!-- <Styling /> -->
   <!-- <InputDataBinding /> -->
   <!-- <PropsDataPassing /> -->
-  <ParentComponent />
+  <!-- <ParentComponent /> -->
+  <LifeCycleMethod />
 </template>
 
 <script>
@@ -22,7 +23,8 @@
 // import Styling from './components/Styling.vue';
 // import InputDataBinding from './components/InputDataBinding.vue';
 // import PropsDataPassing from './components/props/PropsDataPassing.vue';
-import ParentComponent from './components/props/propschildtoparentcomponent/ParentComponent.vue';
+// import ParentComponent from './components/props/propschildtoparentcomponent/ParentComponent.vue';
+import LifeCycleMethod from './components/LifeCycleMethod.vue';
 
 export default {
   name: 'App',
@@ -36,7 +38,8 @@ export default {
     // Styling
     // InputDataBinding
     // PropsDataPassing
-    ParentComponent
+    // ParentComponent
+    LifeCycleMethod
   }
 };
 </script>
