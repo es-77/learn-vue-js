@@ -10,7 +10,8 @@
   <!-- <InputDataBinding /> -->
   <!-- <PropsDataPassing /> -->
   <!-- <ParentComponent /> -->
-  <LifeCycleMethod />
+  <!-- <LifeCycleMethod /> -->
+  <FormWithCheckboxAndRadioButton />
 </template>
 
 <script>
@@ -24,7 +25,8 @@
 // import InputDataBinding from './components/InputDataBinding.vue';
 // import PropsDataPassing from './components/props/PropsDataPassing.vue';
 // import ParentComponent from './components/props/propschildtoparentcomponent/ParentComponent.vue';
-import LifeCycleMethod from './components/LifeCycleMethod.vue';
+// import LifeCycleMethod from './components/LifeCycleMethod.vue';
+import FormWithCheckboxAndRadioButton from './components/formComponents/FormWithCheckboxAndRadioButton.vue';
 
 export default {
   name: 'App',
@@ -39,7 +41,8 @@ export default {
     // InputDataBinding
     // PropsDataPassing
     // ParentComponent
-    LifeCycleMethod
+    // LifeCycleMethod
+    FormWithCheckboxAndRadioButton
   }
 };
 </script>
