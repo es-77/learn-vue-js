@@ -6,7 +6,8 @@
   <!-- <ConditionalRender /> -->
   <!-- <ForLoop /> -->
   <!-- <MainLayOut /> -->
-  <Styling />
+  <!-- <Styling /> -->
+  <InputDataBinding />
 </template>
 
 <script>
@@ -16,7 +17,8 @@
 // import ConditionalRender from './components/ConditionalRender.vue'
 // import ForLoop from './components/ForLoop.vue';
 // import MainLayOut from './components/layout/MainLayOut.vue';
-import Styling from './components/Styling.vue';
+// import Styling from './components/Styling.vue';
+import InputDataBinding from './components/InputDataBinding.vue';
 
 export default {
   name: 'App',
@@ -27,7 +29,8 @@ export default {
     // ConditionalRender
     // ForLoop
     // MainLayOut
-    Styling
+    // Styling
+    InputDataBinding
   }
 };
 </script>
