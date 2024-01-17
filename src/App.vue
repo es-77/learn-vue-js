@@ -8,7 +8,8 @@
   <!-- <MainLayOut /> -->
   <!-- <Styling /> -->
   <!-- <InputDataBinding /> -->
-  <PropsDataPassing />
+  <!-- <PropsDataPassing /> -->
+  <ParentComponent />
 </template>
 
 <script>
@@ -20,7 +21,8 @@
 // import MainLayOut from './components/layout/MainLayOut.vue';
 // import Styling from './components/Styling.vue';
 // import InputDataBinding from './components/InputDataBinding.vue';
-import PropsDataPassing from './components/props/PropsDataPassing.vue';
+// import PropsDataPassing from './components/props/PropsDataPassing.vue';
+import ParentComponent from './components/props/propschildtoparentcomponent/ParentComponent.vue';
 
 export default {
   name: 'App',
@@ -33,7 +35,8 @@ export default {
     // MainLayOut
     // Styling
     // InputDataBinding
-    PropsDataPassing
+    // PropsDataPassing
+    ParentComponent
   }
 };
 </script>
