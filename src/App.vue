@@ -3,14 +3,16 @@
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   <!-- <Home name="Emmanuel" lastName="Saleem"/> -->
   <!-- <ButtonEvent /> -->
-  <ConditionalRender />
+  <!-- <ConditionalRender /> -->
+  <ForLoop />
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 // import Home from './components/Home.vue'
 // import ButtonEvent from './components/ButtonEvent.vue'
-import ConditionalRender from './components/ConditionalRender.vue'
+// import ConditionalRender from './components/ConditionalRender.vue'
+import ForLoop from './components/ForLoop.vue'
 
 export default {
   name: 'App',
@@ -18,7 +20,8 @@ export default {
     // HelloWorld,
     // Home
     // ButtonEvent
-    ConditionalRender
+    // ConditionalRender
+    ForLoop
   }
 }
 </script>
