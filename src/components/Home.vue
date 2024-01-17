@@ -1,8 +1,10 @@
 <template>
     <div>
         <h1>hello home components</h1>
-        <h1>{{name}}</h1>
-        <h1>{{lastName}}</h1>
+        <!-- <h1>{{name}}</h1>
+        <h1>{{lastName}}</h1> -->
+
+        <button v-on:click="helloWord"> console data on click</button>
     </div>
 </template>
 
@@ -14,6 +16,12 @@ export default {
     props:{
         name:String,
         lastName:String
+    },
+    methods:{
+        helloWord(){
+            console.log('hello world button click ');
+
+        }
     }
 }
 </script>
