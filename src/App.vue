@@ -13,7 +13,8 @@
   <!-- <LifeCycleMethod /> -->
   <!-- <FormWithCheckboxAndRadioButton /> -->
   <!-- <FormValidation /> -->
-  <Filters />
+  <!-- <Filters /> -->
+  <FetchDataFromAPI />
 </template>
 
 <script>
@@ -30,7 +31,8 @@
 // import LifeCycleMethod from './components/LifeCycleMethod.vue';
 // import FormWithCheckboxAndRadioButton from './components/formComponents/FormWithCheckboxAndRadioButton.vue';
 // import FormValidation from './components/formComponents/FormValidation.vue';
-import Filters from './components/formComponents/Filters.vue';
+// import Filters from './components/formComponents/Filters.vue';
+import FetchDataFromAPI from './components/formComponents/FetchDataFromAPI.vue';
 
 export default {
   name: 'App',
@@ -48,7 +50,8 @@ export default {
     // LifeCycleMethod
     // FormWithCheckboxAndRadioButton
     // FormValidation
-    Filters
+    // Filters
+    FetchDataFromAPI
   }
 };
 </script>
