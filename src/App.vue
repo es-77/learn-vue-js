@@ -11,7 +11,8 @@
   <!-- <PropsDataPassing /> -->
   <!-- <ParentComponent /> -->
   <!-- <LifeCycleMethod /> -->
-  <FormWithCheckboxAndRadioButton />
+  <!-- <FormWithCheckboxAndRadioButton /> -->
+  <FormValidation />
 </template>
 
 <script>
@@ -26,7 +27,8 @@
 // import PropsDataPassing from './components/props/PropsDataPassing.vue';
 // import ParentComponent from './components/props/propschildtoparentcomponent/ParentComponent.vue';
 // import LifeCycleMethod from './components/LifeCycleMethod.vue';
-import FormWithCheckboxAndRadioButton from './components/formComponents/FormWithCheckboxAndRadioButton.vue';
+// import FormWithCheckboxAndRadioButton from './components/formComponents/FormWithCheckboxAndRadioButton.vue';
+import FormValidation from './components/formComponents/FormValidation.vue';
 
 export default {
   name: 'App',
@@ -42,7 +44,8 @@ export default {
     // PropsDataPassing
     // ParentComponent
     // LifeCycleMethod
-    FormWithCheckboxAndRadioButton
+    // FormWithCheckboxAndRadioButton
+    FormValidation
   }
 };
 </script>

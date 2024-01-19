@@ -24,15 +24,6 @@ export default {
 </script>
 
 <style>
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
-
 body {
   padding: 0;
   margin: 0;
@@ -58,17 +49,14 @@ body {
 .div4 {
   grid-area: 3 / 1 / 4 / 5;
 }
-.div1 {
+
+.div1,
+.div3,
+.div4 {
   border: 1px solid black;
 }
 .div2 {
   border: 1px solid black;
   height: 84vh;
-}
-.div3 {
-  border: 1px solid black;
-}
-.div4 {
-  border: 1px solid black;
 }
 </style>
