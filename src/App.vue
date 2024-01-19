@@ -12,7 +12,8 @@
   <!-- <ParentComponent /> -->
   <!-- <LifeCycleMethod /> -->
   <!-- <FormWithCheckboxAndRadioButton /> -->
-  <FormValidation />
+  <!-- <FormValidation /> -->
+  <Filters />
 </template>
 
 <script>
@@ -28,7 +29,8 @@
 // import ParentComponent from './components/props/propschildtoparentcomponent/ParentComponent.vue';
 // import LifeCycleMethod from './components/LifeCycleMethod.vue';
 // import FormWithCheckboxAndRadioButton from './components/formComponents/FormWithCheckboxAndRadioButton.vue';
-import FormValidation from './components/formComponents/FormValidation.vue';
+// import FormValidation from './components/formComponents/FormValidation.vue';
+import Filters from './components/formComponents/Filters.vue';
 
 export default {
   name: 'App',
@@ -45,7 +47,8 @@ export default {
     // ParentComponent
     // LifeCycleMethod
     // FormWithCheckboxAndRadioButton
-    FormValidation
+    // FormValidation
+    Filters
   }
 };
 </script>
