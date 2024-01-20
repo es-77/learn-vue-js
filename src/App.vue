@@ -14,7 +14,11 @@
   <!-- <FormWithCheckboxAndRadioButton /> -->
   <!-- <FormValidation /> -->
   <!-- <Filters /> -->
-  <FetchDataFromAPI />
+  <!-- <FetchDataFromAPI /> -->
+  <!-- <AddBootstrap /> -->
+  <!-- <RequestPost /> -->
+  <!-- <RequestDelete /> -->
+  <Navbar />
 </template>
 
 <script>
@@ -32,7 +36,11 @@
 // import FormWithCheckboxAndRadioButton from './components/formComponents/FormWithCheckboxAndRadioButton.vue';
 // import FormValidation from './components/formComponents/FormValidation.vue';
 // import Filters from './components/formComponents/Filters.vue';
-import FetchDataFromAPI from './components/formComponents/FetchDataFromAPI.vue';
+// import FetchDataFromAPI from './components/formComponents/FetchDataFromAPI.vue';
+// import AddBootstrap from './components/addBootstrap/AddBootstrap.vue';
+// import RequestPost from './components/requestPostGetDelete/RequestPost.vue';
+// import RequestDelete from './components/requestPostGetDelete/RequestDelete.vue';
+import Navbar from './components/routing/Navbar.vue';
 
 export default {
   name: 'App',
@@ -51,7 +59,11 @@ export default {
     // FormWithCheckboxAndRadioButton
     // FormValidation
     // Filters
-    FetchDataFromAPI
+    // FetchDataFromAPI
+    // AddBootstrap
+    // RequestPost
+    // RequestDelete
+    Navbar
   }
 };
 </script>

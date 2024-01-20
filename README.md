@@ -1,5 +1,6 @@
 # blog
 
+json-server --watch db.json
 ## Project setup
 ```
 npm install
