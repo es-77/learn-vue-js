@@ -18,7 +18,8 @@
   <!-- <AddBootstrap /> -->
   <!-- <RequestPost /> -->
   <!-- <RequestDelete /> -->
-  <Navbar />
+  <!-- <Navbar /> -->
+  <DynamicMain />
 </template>
 
 <script>
@@ -40,7 +41,8 @@
 // import AddBootstrap from './components/addBootstrap/AddBootstrap.vue';
 // import RequestPost from './components/requestPostGetDelete/RequestPost.vue';
 // import RequestDelete from './components/requestPostGetDelete/RequestDelete.vue';
-import Navbar from './components/routing/Navbar.vue';
+// import Navbar from './components/routing/Navbar.vue';
+import DynamicMain from './components/dynamicComponent/DynamicMain.vue';
 
 export default {
   name: 'App',
@@ -63,7 +65,7 @@ export default {
     // AddBootstrap
     // RequestPost
     // RequestDelete
-    Navbar
+    DynamicMain
   }
 };
 </script>

@@ -5,6 +5,7 @@ import Home from './components/routing/Home.vue';
 import About from './components/routing/About.vue';
 import Contact from './components/routing/Contact.vue';
 import UsersLis from './components/routing/UsersLis.vue';
+// import PageNotFound from './components/routing/PageNotFound.vue';
 import SingleUser from './components/routing/SingleUser.vue';
 import RequestPost from './components/requestPostGetDelete/RequestPost.vue';
 
@@ -15,6 +16,7 @@ const routes = [
     { path: '/UsersLis', component: UsersLis },
     { path: '/RequestPost', component: RequestPost },
     { path: '/SingleUser/:id', component: SingleUser },
+    // { path: '*', component: PageNotFound },
 ];
 
 const router = createRouter({
