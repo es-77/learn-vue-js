@@ -19,7 +19,8 @@
   <!-- <RequestPost /> -->
   <!-- <RequestDelete /> -->
   <!-- <Navbar /> -->
-  <DynamicMain />
+  <!-- <DynamicMain /> -->
+  <Watchers />
 </template>
 
 <script>
@@ -42,7 +43,8 @@
 // import RequestPost from './components/requestPostGetDelete/RequestPost.vue';
 // import RequestDelete from './components/requestPostGetDelete/RequestDelete.vue';
 // import Navbar from './components/routing/Navbar.vue';
-import DynamicMain from './components/dynamicComponent/DynamicMain.vue';
+// import DynamicMain from './components/dynamicComponent/DynamicMain.vue';
+import Watchers from './components/Watchers.vue';
 
 export default {
   name: 'App',
@@ -65,7 +67,8 @@ export default {
     // AddBootstrap
     // RequestPost
     // RequestDelete
-    DynamicMain
+    // DynamicMain
+    Watchers
   }
 };
 </script>
