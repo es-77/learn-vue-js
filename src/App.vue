@@ -22,7 +22,9 @@
   <!-- <DynamicMain /> -->
   <!-- <Watchers /> -->
   <!-- <SlotsBasicExample /> -->
-  <ExampleMultiSlotMain />
+  <!-- <ExampleMultiSlotMain /> -->
+  <!-- <TeleportMainComponent /> -->
+  <LifeCycleMain />
 </template>
 
 <script>
@@ -48,7 +50,9 @@
 // import DynamicMain from './components/dynamicComponent/DynamicMain.vue';
 // import Watchers from './components/Watchers.vue';
 // import SlotsBasicExample from './components/slots/SlotsBasicExample.vue';
-import ExampleMultiSlotMain from './components/slots/ExampleMultiSlotMain.vue';
+// import ExampleMultiSlotMain from './components/slots/ExampleMultiSlotMain.vue';
+// import TeleportMainComponent from './components/teleportComponent/TeleportMainComponent.vue';
+import LifeCycleMain from './components/lifeCycleMethodsComponts/LifeCycleMain.vue';
 
 export default {
   name: 'App',
@@ -74,7 +78,9 @@ export default {
     // DynamicMain
     // Watchers
     // SlotsBasicExample
-    ExampleMultiSlotMain
+    // ExampleMultiSlotMain
+    // TeleportMainComponent
+    LifeCycleMain
   }
 };
 </script>
