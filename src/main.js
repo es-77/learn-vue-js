@@ -1,5 +1,6 @@
 import { createApp } from 'vue';
 import App from './App.vue';
+import routes from './components/routingVueJS3/routes';
 // import { createRouter, createWebHistory } from 'vue-router';
 // import Home from './components/routing/Home.vue';
 // import About from './components/routing/About.vue';
@@ -33,5 +34,6 @@ const app = createApp(App);
 
 // app.directive('custom-font-size', fontSizeDirective);
 // app.directive('capitalize-text', capitalizeDirective);
-app.mount('#app');
+// app.mount('#app');
+app.use(routes).mount('#app');
 // createApp(App).use(router).mount('#app');

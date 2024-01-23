@@ -24,7 +24,8 @@
   <!-- <SlotsBasicExample /> -->
   <!-- <ExampleMultiSlotMain /> -->
   <!-- <TeleportMainComponent /> -->
-  <LifeCycleMain />
+  <!-- <LifeCycleMain /> -->
+  <RouterComponentShow />
 </template>
 
 <script>
@@ -52,7 +53,8 @@
 // import SlotsBasicExample from './components/slots/SlotsBasicExample.vue';
 // import ExampleMultiSlotMain from './components/slots/ExampleMultiSlotMain.vue';
 // import TeleportMainComponent from './components/teleportComponent/TeleportMainComponent.vue';
-import LifeCycleMain from './components/lifeCycleMethodsComponts/LifeCycleMain.vue';
+// import LifeCycleMain from './components/lifeCycleMethodsComponts/LifeCycleMain.vue';
+import RouterComponentShow from './components/routingVueJS3/RouterComponentShow.vue';
 
 export default {
   name: 'App',
@@ -80,7 +82,8 @@ export default {
     // SlotsBasicExample
     // ExampleMultiSlotMain
     // TeleportMainComponent
-    LifeCycleMain
+    // LifeCycleMain
+    RouterComponentShow
   }
 };
 </script>
