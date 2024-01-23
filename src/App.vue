@@ -20,7 +20,9 @@
   <!-- <RequestDelete /> -->
   <!-- <Navbar /> -->
   <!-- <DynamicMain /> -->
-  <Watchers />
+  <!-- <Watchers /> -->
+  <!-- <SlotsBasicExample /> -->
+  <ExampleMultiSlotMain />
 </template>
 
 <script>
@@ -44,7 +46,9 @@
 // import RequestDelete from './components/requestPostGetDelete/RequestDelete.vue';
 // import Navbar from './components/routing/Navbar.vue';
 // import DynamicMain from './components/dynamicComponent/DynamicMain.vue';
-import Watchers from './components/Watchers.vue';
+// import Watchers from './components/Watchers.vue';
+// import SlotsBasicExample from './components/slots/SlotsBasicExample.vue';
+import ExampleMultiSlotMain from './components/slots/ExampleMultiSlotMain.vue';
 
 export default {
   name: 'App',
@@ -68,7 +72,9 @@ export default {
     // RequestPost
     // RequestDelete
     // DynamicMain
-    Watchers
+    // Watchers
+    // SlotsBasicExample
+    ExampleMultiSlotMain
   }
 };
 </script>
