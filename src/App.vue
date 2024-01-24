@@ -26,7 +26,8 @@
   <!-- <TeleportMainComponent /> -->
   <!-- <LifeCycleMain /> -->
   <!-- <RouterComponentShow /> -->
-  <PiniaMainComponent />
+  <!-- <PiniaMainComponent /> -->
+  <VeeValidate />
 </template>
 
 <script>
@@ -56,7 +57,8 @@
 // import TeleportMainComponent from './components/teleportComponent/TeleportMainComponent.vue';
 // import LifeCycleMain from './components/lifeCycleMethodsComponts/LifeCycleMain.vue';
 // import RouterComponentShow from './components/routingVueJS3/RouterComponentShow.vue';
-import PiniaMainComponent from './components/piniaComponents/PiniaMainComponent.vue';
+// import PiniaMainComponent from './components/piniaComponents/PiniaMainComponent.vue';
+import VeeValidate from './components/veeValidate/VeeValidate.vue';
 
 export default {
   name: 'App',
@@ -86,7 +88,8 @@ export default {
     // TeleportMainComponent
     // LifeCycleMain
     // RouterComponentShow
-    PiniaMainComponent
+    // PiniaMainComponent
+    VeeValidate
   }
 };
 </script>

@@ -13,6 +13,7 @@
     "bootstrap-vue": "^2.23.1",
     "core-js": "^3.8.3",
     "pinia": "^2.1.7",
+    "vee-validate": "^4.12.4",
     "vue": "^3.4.15",
     "vue-axios": "^3.5.2",
     "vue-router": "^4.2.5"
