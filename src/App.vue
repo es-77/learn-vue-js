@@ -25,7 +25,8 @@
   <!-- <ExampleMultiSlotMain /> -->
   <!-- <TeleportMainComponent /> -->
   <!-- <LifeCycleMain /> -->
-  <RouterComponentShow />
+  <!-- <RouterComponentShow /> -->
+  <PiniaMainComponent />
 </template>
 
 <script>
@@ -54,7 +55,8 @@
 // import ExampleMultiSlotMain from './components/slots/ExampleMultiSlotMain.vue';
 // import TeleportMainComponent from './components/teleportComponent/TeleportMainComponent.vue';
 // import LifeCycleMain from './components/lifeCycleMethodsComponts/LifeCycleMain.vue';
-import RouterComponentShow from './components/routingVueJS3/RouterComponentShow.vue';
+// import RouterComponentShow from './components/routingVueJS3/RouterComponentShow.vue';
+import PiniaMainComponent from './components/piniaComponents/PiniaMainComponent.vue';
 
 export default {
   name: 'App',
@@ -83,7 +85,8 @@ export default {
     // ExampleMultiSlotMain
     // TeleportMainComponent
     // LifeCycleMain
-    RouterComponentShow
+    // RouterComponentShow
+    PiniaMainComponent
   }
 };
 </script>

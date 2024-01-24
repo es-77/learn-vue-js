@@ -1,6 +1,8 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import routes from './components/routingVueJS3/routes';
+import { createPinia } from 'pinia'
+const pinia = createPinia();
 // import { createRouter, createWebHistory } from 'vue-router';
 // import Home from './components/routing/Home.vue';
 // import About from './components/routing/About.vue';
@@ -32,8 +34,13 @@ import routes from './components/routingVueJS3/routes';
 
 const app = createApp(App);
 
+
+app
+    .use(pinia)
+    .use(routes)
+    .mount('#app');
+
 // app.directive('custom-font-size', fontSizeDirective);
 // app.directive('capitalize-text', capitalizeDirective);
 // app.mount('#app');
-app.use(routes).mount('#app');
 // createApp(App).use(router).mount('#app');
