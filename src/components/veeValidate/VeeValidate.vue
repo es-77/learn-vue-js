@@ -1,14 +1,17 @@
 <template>
   <p>VeeValidate</p>
-  <VeeValidateBasicComponent />
+  <!-- <VeeValidateBasicComponent /> -->
+  <YupAndVeeValidate />
 </template>
 
 <script>
-import VeeValidateBasicComponent from './VeeValidateBasicComponent.vue';
+// import VeeValidateBasicComponent from './VeeValidateBasicComponent.vue';
+import YupAndVeeValidate from './YupAndVeeValidate.vue';
 export default {
   name: 'VeeValidate',
   components: {
-    VeeValidateBasicComponent
+    // VeeValidateBasicComponent,
+    YupAndVeeValidate
   }
 };
 </script>
