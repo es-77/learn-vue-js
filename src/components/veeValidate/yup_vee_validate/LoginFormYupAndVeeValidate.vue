@@ -1,7 +1,8 @@
 <template>
   <p>LoginFormYupAndVeeValidate</p>
+  <p v-capitalize-text="dynamicText">{{ dynamicText }}</p>
   <Form @submit="onSubmit" :validation-schema="schema">
-    <Field name="name" type="text" /> <br />
+    <Field name="name" type="text" v-can="'user.list'" /> <br />
     <ErrorMessage name="name" /><br />
     <Field name="email" type="email" /> <br />
     <ErrorMessage name="email" /><br />
@@ -24,7 +25,8 @@ export default {
   },
   data() {
     return {
-      schema: LoginYupSchema
+      schema: LoginYupSchema,
+      dynamicText: 'initial value'
     };
   },
   methods: {
