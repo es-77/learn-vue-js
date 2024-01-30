@@ -27,10 +27,12 @@
   <!-- <LifeCycleMain /> -->
   <!-- <RouterComponentShow /> -->
   <!-- <PiniaMainComponent /> -->
-  <VeeValidate />
+  <!-- <VeeValidate /> -->
+  <BuildInDirectiveMainVue />
 </template>
 
 <script>
+import BuildInDirectiveMainVue from './components/buildInDirectives/BuildInDirectiveMain.vue';
 // import HelloWorld from './components/HelloWorld.vue'
 // import Home from './components/Home.vue'
 // import ButtonEvent from './components/ButtonEvent.vue'
@@ -58,7 +60,7 @@
 // import LifeCycleMain from './components/lifeCycleMethodsComponts/LifeCycleMain.vue';
 // import RouterComponentShow from './components/routingVueJS3/RouterComponentShow.vue';
 // import PiniaMainComponent from './components/piniaComponents/PiniaMainComponent.vue';
-import VeeValidate from './components/veeValidate/VeeValidate.vue';
+// import VeeValidate from './components/veeValidate/VeeValidate.vue';
 
 export default {
   name: 'App',
@@ -89,7 +91,8 @@ export default {
     // LifeCycleMain
     // RouterComponentShow
     // PiniaMainComponent
-    VeeValidate
+    // VeeValidate
+    BuildInDirectiveMainVue
   }
 };
 </script>
