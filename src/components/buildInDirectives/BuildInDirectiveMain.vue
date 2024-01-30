@@ -9,12 +9,18 @@
   <!-- <VForVue /> -->
   <!-- <VOnVue /> -->
   <!-- <VbindVue /> -->
-  <VModelVue />
+  <!-- <VModelVue /> -->
+  <!-- <VPreVue /> -->
+  <!-- <VOnceVue /> -->
+  <VMemoVue />
 </template>
 
 <script>
+import VMemoVue from './VMemo.vue';
+// import VOnceVue from './VOnce.vue';
 // import VbindVue from './VBind.vue';
-import VModelVue from './VModel.vue';
+// import VModelVue from './VModel.vue';
+// import VPreVue from './VPre.vue';
 // import VElseVue from './VElse.vue';
 // import VElseIfVue from './VElseIf.vue';
 // import VForVue from './VFor.vue';
@@ -36,7 +42,10 @@ export default {
     // VForVue
     // VOnVue
     // VbindVue
-    VModelVue
+    // VModelVue
+    // VPreVue
+    // VOnceVue
+    VMemoVue
   }
 };
 </script>
