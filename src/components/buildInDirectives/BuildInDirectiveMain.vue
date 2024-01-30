@@ -5,12 +5,16 @@
   <!-- <VShowVue /> -->
   <!-- <VIfVue /> -->
   <!-- <VElseVue /> -->
-  <VElseIfVue />
+  <!-- <VElseIfVue /> -->
+  <!-- <VForVue /> -->
+  <VOnVue />
 </template>
 
 <script>
 // import VElseVue from './VElse.vue';
-import VElseIfVue from './VElseIf.vue';
+// import VElseIfVue from './VElseIf.vue';
+// import VForVue from './VFor.vue';
+import VOnVue from './VOn.vue';
 // import VIfVue from './VIf.vue';
 // import VHtmlVue from './VHtml.vue';
 // import VShowVue from './VShow.vue';
@@ -24,7 +28,9 @@ export default {
     // VShowVue
     // VIfVue
     // VElseVue
-    VElseIfVue
+    // VElseIfVue
+    // VForVue
+    VOnVue
   }
 };
 </script>
