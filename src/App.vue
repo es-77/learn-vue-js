@@ -28,11 +28,13 @@
   <!-- <RouterComponentShow /> -->
   <!-- <PiniaMainComponent /> -->
   <!-- <VeeValidate /> -->
-  <BuildInDirectiveMainVue />
+  <!-- <BuildInDirectiveMainVue /> -->
+  <BodyContentVue />
 </template>
 
 <script>
-import BuildInDirectiveMainVue from './components/buildInDirectives/BuildInDirectiveMain.vue';
+import BodyContentVue from './components/projectSetup/layout/BodyContent.vue';
+// import BuildInDirectiveMainVue from './components/buildInDirectives/BuildInDirectiveMain.vue';
 // import HelloWorld from './components/HelloWorld.vue'
 // import Home from './components/Home.vue'
 // import ButtonEvent from './components/ButtonEvent.vue'
@@ -92,7 +94,8 @@ export default {
     // RouterComponentShow
     // PiniaMainComponent
     // VeeValidate
-    BuildInDirectiveMainVue
+    // BuildInDirectiveMainVue
+    BodyContentVue
   }
 };
 </script>

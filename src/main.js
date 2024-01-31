@@ -1,11 +1,12 @@
 import { createApp } from 'vue';
 import App from './App.vue';
-import routes from './components/routingVueJS3/routes';
+// import routes from './components/routingVueJS3/routes';
 import { createPinia } from 'pinia'
 // import uppercase from './components/customDirectives/uppercase.js'
 // import canDirective from './components/customDirectives/can.js'
 import { permissionAccess } from './components/customDirectives/permissionAccess.js'
 import { uppercase } from './components/customDirectives/uppercase.js'
+import FrontendRoutes from './components/projectSetup/FrontendRoutes';
 // import capitalizeDirective from './components/customDirectives/capitalizeDirective.js'
 const pinia = createPinia();
 // import { createRouter, createWebHistory } from 'vue-router';
@@ -40,13 +41,14 @@ const pinia = createPinia();
 const app = createApp(App);
 app
     .use(pinia)
-    .use(routes)
-    // .directive('can', (element, binding) => {
-    //     console.log('element,binding', element, binding)
-    // })
+    // .use(routes)
+    .use(FrontendRoutes)
     .directive('can', permissionAccess) // Register the directive
     .directive('capitalize-text', uppercase) // Register the directive
 app.mount('#app');
+// .directive('can', (element, binding) => {
+//     console.log('element,binding', element, binding)
+// })
 
 // app.directive('custom-font-size', fontSizeDirective);
 // app.directive('capitalize-text', capitalizeDirective);

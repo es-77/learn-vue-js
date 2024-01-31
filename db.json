@@ -59,6 +59,64 @@
       "id": "f80e",
       "email": "hahyk@mailinator.com",
       "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "5f1a",
+      "email": "ABCDe@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "6f98",
+      "email": "xipazerame@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "0aac",
+      "email": "poxaq@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "4723",
+      "email": "jijes@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "c5d3",
+      "email": "cyvefu@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "779f",
+      "email": "lapedeqy@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "f642",
+      "name": "Beatrice Jensen",
+      "email": "dekanecoqi@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "phone": "+1 (639) 412-3872"
+    },
+    {
+      "id": "3bf8",
+      "user_id": "bf43",
+      "permissions": [
+        "cycling",
+        "running",
+        "team sports",
+        "other"
+      ]
     }
-  ]
+  ],
+  "roles": [
+    {
+      "id": "e1b4",
+      "name": "Charissa Henson"
+    },
+    {
+      "id": "2e22",
+      "name": "Charissa Henson"
+    }
+  ],
+  "permission": []
 }
