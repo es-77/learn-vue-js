@@ -7,8 +7,12 @@ import { createPinia } from 'pinia'
 import { permissionAccess } from './components/customDirectives/permissionAccess.js'
 import { uppercase } from './components/customDirectives/uppercase.js'
 import FrontendRoutes from './components/projectSetup/FrontendRoutes';
+import { usePermissionStore } from './components/projectSetup/projectStore/PermissionStore';
+import { hasPermission } from './components/projectSetup/directives/HasPermission';
+
 // import capitalizeDirective from './components/customDirectives/capitalizeDirective.js'
 const pinia = createPinia();
+const permissionStore = usePermissionStore(); // Create an instance of the store
 // import { createRouter, createWebHistory } from 'vue-router';
 // import Home from './components/routing/Home.vue';
 // import About from './components/routing/About.vue';
@@ -43,9 +47,16 @@ app
     .use(pinia)
     // .use(routes)
     .use(FrontendRoutes)
-    .directive('can', permissionAccess) // Register the directive
     .directive('capitalize-text', uppercase) // Register the directive
-app.mount('#app');
+    .directive('hasPermission', hasPermission)
+    .directive('can', permissionAccess) // Register the directive
+    .provide('permissionStore', permissionStore) // Provide the store first
+    .mount('#app');
+
+
+// app.provide('permissionStore', permissionStore); // Provide the store instance
+// Provide the store instance to the app
+// app.mount('#app');
 // .directive('can', (element, binding) => {
 //     console.log('element,binding', element, binding)
 // })
@@ -54,3 +65,21 @@ app.mount('#app');
 // app.directive('capitalize-text', capitalizeDirective);
 // app.mount('#app');
 // createApp(App).use(router).mount('#app');
+
+
+
+// import { createApp } from 'vue';
+// import App from './App.vue';
+// import { createPinia } from 'pinia'
+// import { permissionAccess } from './components/customDirectives/permissionAccess.js'
+// import { uppercase } from './components/customDirectives/uppercase.js'
+// import FrontendRoutes from './components/projectSetup/FrontendRoutes';
+// const pinia = createPinia();
+
+// const app = createApp(App);
+// app
+//     .use(pinia)
+//     .use(FrontendRoutes)
+//     .directive('can', permissionAccess) // Register the directive
+//     .directive('capitalize-text', uppercase) // Register the directive
+// app.mount('#app');

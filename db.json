@@ -108,6 +108,201 @@
       ]
     }
   ],
+  "user_permission": [
+    {
+      "id": "9b33",
+      "user_id": "3bf8",
+      "permissions": [
+        "role_delete",
+        "role_view",
+        "permission_add",
+        "permission_update",
+        "permission_delete",
+        "permission_view",
+        "user_add",
+        "vehicle_update",
+        "vehicle_delete",
+        "hr_update"
+      ]
+    },
+    {
+      "id": "96f2",
+      "user_id": "9dd3",
+      "permissions": [
+        "role_add",
+        "role_view",
+        "user_delete",
+        "account_add",
+        "account_update",
+        "account_view",
+        "vehicle_view",
+        "hr_add",
+        "hr_delete",
+        "hr_view"
+      ]
+    },
+    {
+      "id": "3e69",
+      "user_id": "3bf8",
+      "permissions": [
+        "role_add",
+        "role_view",
+        "user_delete",
+        "account_add",
+        "account_update",
+        "account_view",
+        "vehicle_view",
+        "hr_add",
+        "hr_delete",
+        "hr_view"
+      ]
+    },
+    {
+      "id": "e852",
+      "user_id": "c6cd",
+      "permissions": [
+        "role_add",
+        "role_update",
+        "user_add",
+        "user_update",
+        "user_delete",
+        "account_add",
+        "account_update",
+        "account_view",
+        "vehicle_add",
+        "vehicle_delete",
+        "vehicle_view",
+        "hr_add"
+      ]
+    },
+    {
+      "id": "5d66",
+      "user_id": "779f",
+      "permissions": [
+        "role_update",
+        "role_delete",
+        "role_view",
+        "permission_add",
+        "permission_delete",
+        "permission_view",
+        "account_delete",
+        "account_view",
+        "vehicle_update",
+        "vehicle_view",
+        "hr_update",
+        "hr_view"
+      ]
+    },
+    {
+      "id": "af4f",
+      "user_id": "0aac",
+      "permissions": [
+        "role_add",
+        "role_update",
+        "role_delete",
+        "permission_add",
+        "permission_update",
+        "user_update",
+        "user_delete",
+        "account_add",
+        "vehicle_update",
+        "vehicle_delete",
+        "vehicle_view",
+        "hr_add",
+        "hr_update",
+        "hr_view"
+      ]
+    },
+    {
+      "id": "e780",
+      "user_id": "9dd3",
+      "permissions": [
+        "role_add",
+        "role_update",
+        "role_view",
+        "permission_add",
+        "permission_update",
+        "user_update",
+        "user_view",
+        "account_update",
+        "account_delete",
+        "account_view",
+        "vehicle_add",
+        "vehicle_view",
+        "hr_delete",
+        "hr_view"
+      ]
+    },
+    {
+      "id": "32d2",
+      "user_id": "112e",
+      "permissions": [
+        "role_update",
+        "role_delete",
+        "permission_add",
+        "user_add",
+        "user_delete",
+        "user_view",
+        "account_update",
+        "account_delete",
+        "vehicle_add",
+        "vehicle_update",
+        "hr_delete"
+      ]
+    },
+    {
+      "id": "30d6",
+      "user_id": "f642",
+      "permissions": [
+        "role_view",
+        "permission_delete",
+        "permission_view",
+        "user_add",
+        "user_update",
+        "user_view",
+        "account_add",
+        "vehicle_add",
+        "vehicle_update",
+        "vehicle_delete",
+        "vehicle_view",
+        "hr_view"
+      ]
+    },
+    {
+      "id": "671d",
+      "user_id": "08f7",
+      "permissions": [
+        "role_add",
+        "permission_add",
+        "permission_delete",
+        "user_add",
+        "user_update",
+        "account_add",
+        "account_update",
+        "account_delete",
+        "account_view",
+        "vehicle_update",
+        "vehicle_view",
+        "hr_add"
+      ]
+    },
+    {
+      "id": "7658",
+      "user_id": "bf43",
+      "permissions": [
+        "role_add",
+        "role_view",
+        "permission_update",
+        "permission_delete",
+        "user_add",
+        "user_view",
+        "account_add",
+        "vehicle_update",
+        "hr_update",
+        "hr_view"
+      ]
+    }
+  ],
   "roles": [
     {
       "id": "e1b4",
@@ -118,5 +313,114 @@
       "name": "Charissa Henson"
     }
   ],
-  "permission": []
+  "permission": {
+    "role": [
+      {
+        "id": 1,
+        "name": "add"
+      },
+      {
+        "id": 2,
+        "name": "update"
+      },
+      {
+        "id": 3,
+        "name": "delete"
+      },
+      {
+        "id": 4,
+        "name": "view"
+      }
+    ],
+    "permission": [
+      {
+        "id": 1,
+        "name": "add"
+      },
+      {
+        "id": 2,
+        "name": "update"
+      },
+      {
+        "id": 3,
+        "name": "delete"
+      },
+      {
+        "id": 4,
+        "name": "view"
+      }
+    ],
+    "user": [
+      {
+        "id": 1,
+        "name": "add"
+      },
+      {
+        "id": 2,
+        "name": "update"
+      },
+      {
+        "id": 3,
+        "name": "delete"
+      },
+      {
+        "id": 4,
+        "name": "view"
+      }
+    ],
+    "account": [
+      {
+        "id": 1,
+        "name": "add"
+      },
+      {
+        "id": 2,
+        "name": "update"
+      },
+      {
+        "id": 3,
+        "name": "delete"
+      },
+      {
+        "id": 4,
+        "name": "view"
+      }
+    ],
+    "vehicle": [
+      {
+        "id": 1,
+        "name": "add"
+      },
+      {
+        "id": 2,
+        "name": "update"
+      },
+      {
+        "id": 3,
+        "name": "delete"
+      },
+      {
+        "id": 4,
+        "name": "view"
+      }
+    ],
+    "hr": [
+      {
+        "id": 1,
+        "name": "add"
+      },
+      {
+        "id": 2,
+        "name": "update"
+      },
+      {
+        "id": 3,
+        "name": "delete"
+      },
+      {
+        "id": 4,
+        "name": "view"
+      }
+    ]
+  }
 }

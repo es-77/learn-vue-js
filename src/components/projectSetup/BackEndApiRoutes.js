@@ -19,6 +19,14 @@ function BackEndApiRoutes() {
         roles: {
             role_get: `${home}/roles`,
             role_save: `${home}/roles`,
+        },
+        permissions: {
+            permissions_get: `${home}/permission`,
+            permissions_save: `${home}/permission`,
+        },
+        userPermission: {
+            user_permission_get: `${home}/user_permission`,
+            user_permission_save: `${home}/user_permission`,
         }
     };
 }
