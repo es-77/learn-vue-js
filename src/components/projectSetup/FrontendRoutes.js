@@ -7,7 +7,7 @@ import User from './components/user/User.vue';
 import Role from './components/role/Role.vue';
 import Permission from './components/permission/Permission.vue';
 // import CreatePermission from './components/permission/CreatePermission.vue';
-
+import UserAsignRole from './components/userAsignRole/UserAsignRole.vue'
 const routesArray = [
     {
         name: 'dashboard',
@@ -23,6 +23,11 @@ const routesArray = [
         name: 'role',
         path: '/role',
         component: Role
+    },
+    {
+        name: 'assign_role',
+        path: '/assign_role',
+        component: UserAsignRole
     },
     {
         name: 'permission',

@@ -28,6 +28,14 @@
     {
       "id": "3b5f",
       "name": "admin"
+    },
+    {
+      "id": "6649",
+      "name": "HR"
+    },
+    {
+      "id": "1329",
+      "name": "Empoyee"
     }
   ],
   "permission": {
@@ -140,7 +148,13 @@
       }
     ]
   },
-  "user_role": [],
+  "user_role": [
+    {
+      "id": "7379",
+      "user_id": "f2f1",
+      "role_id": "3b5f"
+    }
+  ],
   "role_permission": [],
   "user_permission": [
     {
