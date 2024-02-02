@@ -4,312 +4,11 @@
       "id": "3177",
       "email": "wowosolaqo@mailinator.com",
       "password": "Pa$$w0rd!"
-    },
-    {
-      "id": "08f7",
-      "email": "cysu@mailinator.com",
-      "password": "Pa$$w0rd!"
-    },
-    {
-      "id": "e6da",
-      "email": "zupoh@mailinator.com",
-      "password": "Pa$$w0rd!"
-    },
-    {
-      "id": "4f62",
-      "email": "tedaqesaso@mailinator.com",
-      "password": "Pa$$w0rd!"
-    },
-    {
-      "id": "c6cd",
-      "email": "beqa@mailinator.com",
-      "password": "Pa$$w0rd!"
-    },
-    {
-      "id": "bf43",
-      "email": "zylodujix@mailinator.com",
-      "password": "Pa$$w0rd!"
-    },
-    {
-      "id": "20ad",
-      "email": "qitohuci@mailinator.com",
-      "password": "Pa$$w0rd!"
-    },
-    {
-      "id": "112e",
-      "email": "culoruzen@mailinator.com",
-      "password": "Pa$$w0rd!"
-    },
-    {
-      "id": "6213",
-      "email": "pocesoja@mailinator.com",
-      "password": "Pa$$w0rd!"
-    },
-    {
-      "id": "3c0f",
-      "email": "sybahev@mailinator.com",
-      "password": "Pa$$w0rd!"
-    },
-    {
-      "id": "9dd3",
-      "email": "wydumij@mailinator.com",
-      "password": "Pa$$w0rd!"
-    },
-    {
-      "id": "f80e",
-      "email": "hahyk@mailinator.com",
-      "password": "Pa$$w0rd!"
-    },
-    {
-      "id": "5f1a",
-      "email": "ABCDe@mailinator.com",
-      "password": "Pa$$w0rd!"
-    },
-    {
-      "id": "6f98",
-      "email": "xipazerame@mailinator.com",
-      "password": "Pa$$w0rd!"
-    },
-    {
-      "id": "0aac",
-      "email": "poxaq@mailinator.com",
-      "password": "Pa$$w0rd!"
-    },
-    {
-      "id": "4723",
-      "email": "jijes@mailinator.com",
-      "password": "Pa$$w0rd!"
-    },
-    {
-      "id": "c5d3",
-      "email": "cyvefu@mailinator.com",
-      "password": "Pa$$w0rd!"
-    },
-    {
-      "id": "779f",
-      "email": "lapedeqy@mailinator.com",
-      "password": "Pa$$w0rd!"
-    },
-    {
-      "id": "f642",
-      "name": "Beatrice Jensen",
-      "email": "dekanecoqi@mailinator.com",
-      "password": "Pa$$w0rd!",
-      "phone": "+1 (639) 412-3872"
-    },
-    {
-      "id": "3bf8",
-      "user_id": "bf43",
-      "permissions": [
-        "cycling",
-        "running",
-        "team sports",
-        "other"
-      ]
-    }
-  ],
-  "user_permission": [
-    {
-      "id": "9b33",
-      "user_id": "3bf8",
-      "permissions": [
-        "role_delete",
-        "role_view",
-        "permission_add",
-        "permission_update",
-        "permission_delete",
-        "permission_view",
-        "user_add",
-        "vehicle_update",
-        "vehicle_delete",
-        "hr_update"
-      ]
-    },
-    {
-      "id": "96f2",
-      "user_id": "9dd3",
-      "permissions": [
-        "role_add",
-        "role_view",
-        "user_delete",
-        "account_add",
-        "account_update",
-        "account_view",
-        "vehicle_view",
-        "hr_add",
-        "hr_delete",
-        "hr_view"
-      ]
-    },
-    {
-      "id": "3e69",
-      "user_id": "3bf8",
-      "permissions": [
-        "role_add",
-        "role_view",
-        "user_delete",
-        "account_add",
-        "account_update",
-        "account_view",
-        "vehicle_view",
-        "hr_add",
-        "hr_delete",
-        "hr_view"
-      ]
-    },
-    {
-      "id": "e852",
-      "user_id": "c6cd",
-      "permissions": [
-        "role_add",
-        "role_update",
-        "user_add",
-        "user_update",
-        "user_delete",
-        "account_add",
-        "account_update",
-        "account_view",
-        "vehicle_add",
-        "vehicle_delete",
-        "vehicle_view",
-        "hr_add"
-      ]
-    },
-    {
-      "id": "5d66",
-      "user_id": "779f",
-      "permissions": [
-        "role_update",
-        "role_delete",
-        "role_view",
-        "permission_add",
-        "permission_delete",
-        "permission_view",
-        "account_delete",
-        "account_view",
-        "vehicle_update",
-        "vehicle_view",
-        "hr_update",
-        "hr_view"
-      ]
-    },
-    {
-      "id": "af4f",
-      "user_id": "0aac",
-      "permissions": [
-        "role_add",
-        "role_update",
-        "role_delete",
-        "permission_add",
-        "permission_update",
-        "user_update",
-        "user_delete",
-        "account_add",
-        "vehicle_update",
-        "vehicle_delete",
-        "vehicle_view",
-        "hr_add",
-        "hr_update",
-        "hr_view"
-      ]
-    },
-    {
-      "id": "e780",
-      "user_id": "9dd3",
-      "permissions": [
-        "role_add",
-        "role_update",
-        "role_view",
-        "permission_add",
-        "permission_update",
-        "user_update",
-        "user_view",
-        "account_update",
-        "account_delete",
-        "account_view",
-        "vehicle_add",
-        "vehicle_view",
-        "hr_delete",
-        "hr_view"
-      ]
-    },
-    {
-      "id": "32d2",
-      "user_id": "112e",
-      "permissions": [
-        "role_update",
-        "role_delete",
-        "permission_add",
-        "user_add",
-        "user_delete",
-        "user_view",
-        "account_update",
-        "account_delete",
-        "vehicle_add",
-        "vehicle_update",
-        "hr_delete"
-      ]
-    },
-    {
-      "id": "30d6",
-      "user_id": "f642",
-      "permissions": [
-        "role_view",
-        "permission_delete",
-        "permission_view",
-        "user_add",
-        "user_update",
-        "user_view",
-        "account_add",
-        "vehicle_add",
-        "vehicle_update",
-        "vehicle_delete",
-        "vehicle_view",
-        "hr_view"
-      ]
-    },
-    {
-      "id": "671d",
-      "user_id": "08f7",
-      "permissions": [
-        "role_add",
-        "permission_add",
-        "permission_delete",
-        "user_add",
-        "user_update",
-        "account_add",
-        "account_update",
-        "account_delete",
-        "account_view",
-        "vehicle_update",
-        "vehicle_view",
-        "hr_add"
-      ]
-    },
-    {
-      "id": "7658",
-      "user_id": "bf43",
-      "permissions": [
-        "role_add",
-        "role_view",
-        "permission_update",
-        "permission_delete",
-        "user_add",
-        "user_view",
-        "account_add",
-        "vehicle_update",
-        "hr_update",
-        "hr_view"
-      ]
     }
   ],
   "roles": [
     {
       "id": "e1b4",
-      "name": "Charissa Henson"
-    },
-    {
-      "id": "2e22",
       "name": "Charissa Henson"
     }
   ],
@@ -422,5 +121,25 @@
         "name": "view"
       }
     ]
-  }
+  },
+  "user_role": [],
+  "role_permission": [],
+  "user_permission": [
+    {
+      "id": "9b33",
+      "user_id": "3bf8",
+      "permissions": [
+        "role_delete",
+        "role_view",
+        "permission_add",
+        "permission_update",
+        "permission_delete",
+        "permission_view",
+        "user_add",
+        "vehicle_update",
+        "vehicle_delete",
+        "hr_update"
+      ]
+    }
+  ]
 }

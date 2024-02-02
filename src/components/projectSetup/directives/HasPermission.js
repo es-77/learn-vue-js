@@ -1,15 +1,13 @@
-import { inject } from 'vue';
 
 const hasPermission = {
     mounted: (ele, binding) => {
-        // const permissionStore = app.usePermissionStore();
-        const permissionStore = inject('permissionStore'); // Inject the store
 
-        // Get the user permissions from the store
-        // const userPermissions = permissionStore.userPermissions;
-        console.log(permissionStore)
+        const { value } = binding
+        const permissionCheck = value[0];
+        const allPermission = value[1];
         const permission = "user.list,user.create,user.update,user.delete";
-        console.log(ele, binding, "element,bindling")
+        console.log(ele, binding, "element,bindling", permissionCheck,
+            allPermission)
         if (!permission.includes(binding.value)) {
             ele.parentNode.removeChild(ele)
         }

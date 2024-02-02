@@ -7,12 +7,14 @@ import { createPinia } from 'pinia'
 import { permissionAccess } from './components/customDirectives/permissionAccess.js'
 import { uppercase } from './components/customDirectives/uppercase.js'
 import FrontendRoutes from './components/projectSetup/FrontendRoutes';
-import { usePermissionStore } from './components/projectSetup/projectStore/PermissionStore';
+// import { usePermissionStore } from './components/projectSetup/projectStore/PermissionStore';
 import { hasPermission } from './components/projectSetup/directives/HasPermission';
+import 'vue-toast-notification/dist/theme-bootstrap.css';
+import ToastPlugin from 'vue-toast-notification';
 
 // import capitalizeDirective from './components/customDirectives/capitalizeDirective.js'
 const pinia = createPinia();
-const permissionStore = usePermissionStore(); // Create an instance of the store
+// const permissionStore = usePermissionStore(); // Create an instance of the store
 // import { createRouter, createWebHistory } from 'vue-router';
 // import Home from './components/routing/Home.vue';
 // import About from './components/routing/About.vue';
@@ -50,7 +52,8 @@ app
     .directive('capitalize-text', uppercase) // Register the directive
     .directive('hasPermission', hasPermission)
     .directive('can', permissionAccess) // Register the directive
-    .provide('permissionStore', permissionStore) // Provide the store first
+    // .provide('permissionStore', permissionStore) // Provide the store first
+    .use(ToastPlugin)
     .mount('#app');
 
 
