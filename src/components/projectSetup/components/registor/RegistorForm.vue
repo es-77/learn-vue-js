@@ -13,6 +13,7 @@
     <ErrorMessage name="phone" /><br />
     <button type="submit">submit</button>
   </Form>
+  <ToastMessageVue :message="toastMessage" :variant="toastVariant" ref="toast" />
 </template>
 
 <script>
@@ -20,25 +21,33 @@ import { RegistorValidation } from './RegistorValidation';
 import { Form, Field, ErrorMessage } from 'vee-validate';
 import axios from 'axios';
 import BackEndApiRoutes from '../../BackEndApiRoutes';
+import ToastMessageVue from '../../common/ToastMessage.vue';
 
 export default {
   name: 'RegistorForm',
   components: {
     Form,
     Field,
-    ErrorMessage
+    ErrorMessage,
+    ToastMessageVue
   },
   data() {
     return {
-      schema: RegistorValidation
+      schema: RegistorValidation,
+      toastMessage: '',
+      toastVariant: 'info'
     };
   },
   methods: {
     async onSubmit(value) {
-      const response = await axios
-        .post(BackEndApiRoutes.users.user_save, value)
-        .catch(error => console.error('Search Error:', error));
-      response?.data?.results ?? null;
+      const response = await axios.post(BackEndApiRoutes.users.user_save, value).catch(error => {
+        (this.toastMessage = 'User not found'), (this.toastVariant = 'error'), console.log(error);
+      });
+      if (response?.data) {
+        this.toastMessage = 'Registor Successfuly';
+        this.toastVariant = 'success';
+      }
+      this.$refs.toast.show();
     }
   }
 };

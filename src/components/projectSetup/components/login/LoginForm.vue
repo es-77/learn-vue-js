@@ -12,9 +12,9 @@
 </template>
 
 <script>
+import axios from 'axios';
 import { LoginValidation } from './LoginValidation';
 import { Form, Field, ErrorMessage } from 'vee-validate';
-import axios from 'axios';
 import BackEndApiRoutes from '../../BackEndApiRoutes';
 import ToastMessageVue from '../../common/ToastMessage.vue';
 

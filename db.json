@@ -4,6 +4,20 @@
       "id": "3177",
       "email": "wowosolaqo@mailinator.com",
       "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "f2f1",
+      "name": "Emmanuel Saleem",
+      "email": "admin@admin.com",
+      "password": "123123123",
+      "phone": "+923041068389"
+    },
+    {
+      "id": "934a",
+      "name": "Sasha Gillespie",
+      "email": "raqy@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "phone": "+1 (615) 669-9102"
     }
   ],
   "roles": [
