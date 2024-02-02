@@ -9,7 +9,7 @@ import Permission from './components/permission/Permission.vue';
 // import CreatePermission from './components/permission/CreatePermission.vue';
 import UserAsignRole from './components/userAsignRole/UserAsignRole.vue';
 import RoleAssignPermission from './components/roleAssignPermission/RoleAssignPermission.vue';
-const routesArray = [
+let routesArray = [
     {
         name: 'dashboard',
         path: '/',
@@ -40,11 +40,6 @@ const routesArray = [
         path: '/permissions_assing',
         component: RoleAssignPermission
     },
-    // {
-    //     name: 'create_permission',
-    //     path: '/create_permission',
-    //     component: CreatePermission
-    // },
     {
         name: 'login',
         path: '/login',

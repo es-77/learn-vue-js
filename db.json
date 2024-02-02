@@ -6,18 +6,11 @@
       "password": "Pa$$w0rd!"
     },
     {
-      "id": "f2f1",
+      "id": 1,
       "name": "Emmanuel Saleem",
       "email": "admin@admin.com",
       "password": "123123123",
       "phone": "+923041068389"
-    },
-    {
-      "id": "934a",
-      "name": "Sasha Gillespie",
-      "email": "raqy@mailinator.com",
-      "password": "Pa$$w0rd!",
-      "phone": "+1 (615) 669-9102"
     }
   ],
   "roles": [
@@ -150,15 +143,15 @@
   },
   "user_role": [
     {
-      "id": "7379",
-      "user_id": "f2f1",
+      "id": 1,
+      "user_id": 1,
       "role_id": "3b5f"
     }
   ],
   "role_permission": [
     {
-      "id": "1a0f",
-      "role_id": "6649",
+      "id": 1,
+      "role_id": "3b5f",
       "permissions": [
         "role_view",
         "permission_update",

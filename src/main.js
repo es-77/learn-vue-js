@@ -44,6 +44,7 @@ const pinia = createPinia();
 //     routes,
 // });
 
+console.log('FrontendRoutes', FrontendRoutes)
 const app = createApp(App);
 app
     .use(pinia)
