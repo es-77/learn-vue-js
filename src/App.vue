@@ -29,10 +29,12 @@
   <!-- <PiniaMainComponent /> -->
   <!-- <VeeValidate /> -->
   <!-- <BuildInDirectiveMainVue /> -->
-  <BodyContentVue />
+  <AuthBodyVue v-if="isAuthPage" />
+  <BodyContentVue v-else />
 </template>
 
 <script>
+import AuthBodyVue from './components/projectSetup/layout/authLayout/AuthBody.vue';
 import BodyContentVue from './components/projectSetup/layout/BodyContent.vue';
 // import BuildInDirectiveMainVue from './components/buildInDirectives/BuildInDirectiveMain.vue';
 // import HelloWorld from './components/HelloWorld.vue'
@@ -95,7 +97,13 @@ export default {
     // PiniaMainComponent
     // VeeValidate
     // BuildInDirectiveMainVue
-    BodyContentVue
+    BodyContentVue,
+    AuthBodyVue
+  },
+  computed: {
+    isAuthPage() {
+      return ['login', 'registor', 'forgot_password'].includes(this.$route.name);
+    }
   }
 };
 </script>

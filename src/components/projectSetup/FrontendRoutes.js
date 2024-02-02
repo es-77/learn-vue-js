@@ -7,7 +7,8 @@ import User from './components/user/User.vue';
 import Role from './components/role/Role.vue';
 import Permission from './components/permission/Permission.vue';
 // import CreatePermission from './components/permission/CreatePermission.vue';
-import UserAsignRole from './components/userAsignRole/UserAsignRole.vue'
+import UserAsignRole from './components/userAsignRole/UserAsignRole.vue';
+import RoleAssignPermission from './components/roleAssignPermission/RoleAssignPermission.vue';
 const routesArray = [
     {
         name: 'dashboard',
@@ -33,6 +34,11 @@ const routesArray = [
         name: 'permission',
         path: '/permission',
         component: Permission
+    },
+    {
+        name: 'permissions_assing',
+        path: '/permissions_assing',
+        component: RoleAssignPermission
     },
     // {
     //     name: 'create_permission',

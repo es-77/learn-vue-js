@@ -155,7 +155,21 @@
       "role_id": "3b5f"
     }
   ],
-  "role_permission": [],
+  "role_permission": [
+    {
+      "id": "1a0f",
+      "role_id": "6649",
+      "permissions": [
+        "role_view",
+        "permission_update",
+        "user_delete",
+        "account_delete",
+        "account_view",
+        "vehicle_add",
+        "hr_view"
+      ]
+    }
+  ],
   "user_permission": [
     {
       "id": "9b33",
