@@ -105,8 +105,6 @@
 
 <script>
 import { Form, Field, ErrorMessage } from 'vee-validate';
-// LoginValidationBootstrap
-// import axios from 'axios';
 import { LoginValidationBootstrap } from './LoginValidationBootstrap';
 export default {
   // eslint-disable-next-line vue/multi-word-component-names

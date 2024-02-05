@@ -1,20 +1,28 @@
 <template>
-  <p>BoostrapMain</p>
-  <div class="mb-2">
-    <b-avatar src="https://placekitten.com/300/300"></b-avatar>
-    <b-avatar src="https://placekitten.com/300/300" size="6rem"></b-avatar>
-  </div>
+  <BoostrapTopbarVue />
+  <!-- ========== Left Sidebar Start ========== -->
+  <BoostrapSideBarVue />
+  <!-- Left Sidebar End -->
+  <DashboardVue />
+  <BoostrapRightSidebarVue />
 
   <!-- <BoostrapTopbarVue /> -->
 </template>
 
 <script>
-import 'bootstrap';
-// import BoostrapTopbarVue from './BoostrapTopbar.vue';
+import DashboardVue from '../components/dashboard/Dashboard.vue';
+import BoostrapRightSidebarVue from './BoostrapRightSidebar.vue';
+import BoostrapSideBarVue from './BoostrapSideBar.vue';
+import BoostrapTopbarVue from './BoostrapTopbar.vue';
+
 export default {
   name: 'BoostrapMain',
   components: {
     // BoostrapTopbarVue,
+    DashboardVue,
+    BoostrapRightSidebarVue,
+    BoostrapSideBarVue,
+    BoostrapTopbarVue
   }
 };
 </script>

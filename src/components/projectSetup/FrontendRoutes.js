@@ -9,7 +9,7 @@ import Permission from './components/permission/Permission.vue';
 // import CreatePermission from './components/permission/CreatePermission.vue';
 import UserAsignRole from './components/userAsignRole/UserAsignRole.vue';
 import RoleAssignPermission from './components/roleAssignPermission/RoleAssignPermission.vue';
-import { getUser } from './common/LocalStoreage';
+// import { getUser } from './common/LocalStoreage';
 import { dashbordEnums, permissionEnums, roleEnums, userEnums } from './common/PermissionEnums';
 
 let routesArray = [
@@ -90,24 +90,24 @@ const FrontendRoutes = createRouter({
     routes: routesArray
 })
 
-FrontendRoutes.beforeEach((to, from, next) => {
-    const userPermissions = getUser()?.rolePermission?.permissions || [];
-    const requiredPermission = to.meta.permission_name;
+// FrontendRoutes.beforeEach((to, from, next) => {
+//     const userPermissions = getUser()?.rolePermission?.permissions || [];
+//     const requiredPermission = to.meta.permission_name;
 
-    console.log(userPermissions.length)
-    if (to.meta.is_auth && userPermissions.includes(requiredPermission)) {
-        next();
-    } else if (to.meta.is_auth) {
-        if (userPermissions.length > 0) {
-            next('/');
+//     console.log(userPermissions.length)
+//     if (to.meta.is_auth && userPermissions.includes(requiredPermission)) {
+//         next();
+//     } else if (to.meta.is_auth) {
+//         if (userPermissions.length > 0) {
+//             next('/');
 
-        } else {
-            console.log('User does not have permission for this route.');
-            next('/login');
-        }
-    } else {
-        next();
-    }
-});
+//         } else {
+//             console.log('User does not have permission for this route.');
+//             next('/login');
+//         }
+//     } else {
+//         next();
+//     }
+// });
 
 export default FrontendRoutes

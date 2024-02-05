@@ -11,9 +11,8 @@ import FrontendRoutes from './components/projectSetup/FrontendRoutes';
 import { hasPermission } from './components/projectSetup/directives/HasPermission';
 import 'vue-toast-notification/dist/theme-bootstrap.css';
 import ToastPlugin from 'vue-toast-notification';
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap"
 
+// import '@fortawesome/fontawesome-free/css/all.css';
 // import capitalizeDirective from './components/customDirectives/capitalizeDirective.js'
 const pinia = createPinia();
 // const permissionStore = usePermissionStore(); // Create an instance of the store
