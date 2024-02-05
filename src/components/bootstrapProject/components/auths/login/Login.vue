@@ -19,7 +19,7 @@
 
                   <div class="mb-3">
                     <div class="float-end">
-                      <a href="auth-recoverpw.html" class="text-muted">Forgot password?</a>
+                      <router-link class="text-muted" to="/forget_password">Forgot password?</router-link>
                     </div>
                     <label class="form-label" for="password">Password</label>
                     <Field
@@ -74,7 +74,7 @@
                   <div class="mt-4 text-center">
                     <p class="mb-0">
                       Don't have an account ?
-                      <a href="auth-register.html" class="fw-medium text-primary"> Signup now </a>
+                      <router-link class="fw-medium text-primary" to="/register">Signup now</router-link>
                     </p>
                   </div>
                 </Form>

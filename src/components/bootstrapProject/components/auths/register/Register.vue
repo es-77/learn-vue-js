@@ -77,7 +77,8 @@
 
                   <div class="mt-4 text-center">
                     <p class="text-muted mb-0">
-                      Already have an account ? <a href="auth-login.html" class="fw-medium text-primary"> Login</a>
+                      Already have an account ?
+                      <router-link class="fw-medium text-primary" to="/login">Login</router-link>
                     </p>
                   </div>
                 </Form>

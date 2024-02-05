@@ -6,11 +6,13 @@ import { createPinia } from 'pinia'
 // import canDirective from './components/customDirectives/can.js'
 import { permissionAccess } from './components/customDirectives/permissionAccess.js'
 import { uppercase } from './components/customDirectives/uppercase.js'
-import FrontendRoutes from './components/projectSetup/FrontendRoutes';
+// import FrontendRoutes from './components/projectSetup/FrontendRoutes';
 // import { usePermissionStore } from './components/projectSetup/projectStore/PermissionStore';
 import { hasPermission } from './components/projectSetup/directives/HasPermission';
 import 'vue-toast-notification/dist/theme-bootstrap.css';
 import ToastPlugin from 'vue-toast-notification';
+import BoostrapFrontEndRoute from './components/bootstrapProject/routes/BoostrapFrontEndRoute';
+
 // import "bootstrap/dist/css/bootstrap.min.css"
 // import "bootstrap"
 // import '@fortawesome/fontawesome-free/css/all.css';
@@ -46,12 +48,13 @@ const pinia = createPinia();
 //     routes,
 // });
 
-console.log('FrontendRoutes', FrontendRoutes)
+// console.log('FrontendRoutes', FrontendRoutes)
 const app = createApp(App);
 app
     .use(pinia)
     // .use(routes)
-    .use(FrontendRoutes)
+    // .use(FrontendRoutes)
+    .use(BoostrapFrontEndRoute)
     .directive('capitalize-text', uppercase) // Register the directive
     .directive('hasPermission', hasPermission)
     .directive('can', permissionAccess) // Register the directive

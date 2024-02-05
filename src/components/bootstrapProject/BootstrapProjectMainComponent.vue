@@ -15,7 +15,7 @@ export default {
   },
   computed: {
     isAuthPage() {
-      return ['login', 'registor', 'forgot_password'].includes(this.$route.name);
+      return ['login', 'register', 'forget_password'].includes(this.$route.name);
     }
   }
 };

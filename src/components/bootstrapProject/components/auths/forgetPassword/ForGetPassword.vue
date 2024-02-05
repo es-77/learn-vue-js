@@ -27,7 +27,8 @@
 
                     <div class="mt-4 text-center">
                       <p class="mb-0">
-                        Remember It ? <a href="auth-login.html" class="fw-medium text-primary"> Signin </a>
+                        Remember It ?
+                        <router-link class="fw-medium text-primary" to="/login">Signin</router-link>
                       </p>
                     </div>
                   </Form>
