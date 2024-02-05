@@ -11,6 +11,13 @@
       "email": "admin@admin.com",
       "password": "123123123",
       "phone": "+923041068389"
+    },
+    {
+      "id": "94ed",
+      "name": "Ira Watson",
+      "email": "hikysic@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "phone": "+1 (411) 155-5807"
     }
   ],
   "roles": [

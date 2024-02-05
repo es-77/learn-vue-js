@@ -103,29 +103,10 @@ export default {
     AuthBodyVue
     // RoutingMethodMainVue
   },
-  // computed: {
-  //   isAuthPage() {
-  //     return ['login', 'registor', 'forgot_password'].includes(this.$route.name);
-  //   }
-  // },
-  methods: {
-    handleAddRoutes() {
-      const newRoutes = [
-        {
-          name: 'new-route',
-          path: '/new-route',
-          component: 'NewComponent'
-        }
-      ];
-      // Add the new routes to the routes array
-      this.routesArray.push(...newRoutes);
-      // Add the new routes to the router
-      newRoutes.forEach(route => {
-        this.$FrontendRoutes.addRoute(route);
-      });
+  computed: {
+    isAuthPage() {
+      return ['login', 'registor', 'forgot_password'].includes(this.$route.name);
     }
-  },
-
-  updated() {}
+  }
 };
 </script>

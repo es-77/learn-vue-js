@@ -94,11 +94,17 @@ FrontendRoutes.beforeEach((to, from, next) => {
     const userPermissions = getUser()?.rolePermission?.permissions || [];
     const requiredPermission = to.meta.permission_name;
 
+    console.log(userPermissions.length)
     if (to.meta.is_auth && userPermissions.includes(requiredPermission)) {
         next();
     } else if (to.meta.is_auth) {
-        console.log('User does not have permission for this route.');
-        next('/login');
+        if (userPermissions.length > 0) {
+            next('/');
+
+        } else {
+            console.log('User does not have permission for this route.');
+            next('/login');
+        }
     } else {
         next();
     }
