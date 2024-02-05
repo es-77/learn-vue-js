@@ -1,8 +1,6 @@
 <template>
-  <p>BootstrapProjectMainComponent</p>
-  <button class="btn btn-primary">Primary Button</button>
-  <BoostrapMainVue v-if="isAuthPage" />
-  <AuthMainBodyVue v-else />
+  <AuthMainBodyVue v-if="isAuthPage" />
+  <BoostrapMainVue v-else />
 </template>
 
 <script>

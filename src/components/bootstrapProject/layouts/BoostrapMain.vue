@@ -4,17 +4,17 @@
     <b-avatar src="https://placekitten.com/300/300"></b-avatar>
     <b-avatar src="https://placekitten.com/300/300" size="6rem"></b-avatar>
   </div>
-  <BoostrapTopbarVue />
+
+  <!-- <BoostrapTopbarVue /> -->
 </template>
 
 <script>
 import 'bootstrap';
-import BoostrapTopbarVue from './BoostrapTopbar.vue';
-
+// import BoostrapTopbarVue from './BoostrapTopbar.vue';
 export default {
   name: 'BoostrapMain',
   components: {
-    BoostrapTopbarVue
+    // BoostrapTopbarVue,
   }
 };
 </script>
