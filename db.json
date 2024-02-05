@@ -153,6 +153,7 @@
       "id": 1,
       "role_id": "3b5f",
       "permissions": [
+        "dashbord_view",
         "role_view",
         "permission_update",
         "user_delete",

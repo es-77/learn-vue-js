@@ -31,11 +31,13 @@
   <!-- <BuildInDirectiveMainVue /> -->
   <AuthBodyVue v-if="isAuthPage" />
   <BodyContentVue v-else />
+  <!-- <RoutingMethodMainVue /> -->
 </template>
 
 <script>
 import AuthBodyVue from './components/projectSetup/layout/authLayout/AuthBody.vue';
 import BodyContentVue from './components/projectSetup/layout/BodyContent.vue';
+// import RoutingMethodMainVue from './components/routingMethods/RoutingMethodMain.vue';
 // import BuildInDirectiveMainVue from './components/buildInDirectives/BuildInDirectiveMain.vue';
 // import HelloWorld from './components/HelloWorld.vue'
 // import Home from './components/Home.vue'
@@ -99,12 +101,13 @@ export default {
     // BuildInDirectiveMainVue
     BodyContentVue,
     AuthBodyVue
+    // RoutingMethodMainVue
   },
-  computed: {
-    isAuthPage() {
-      return ['login', 'registor', 'forgot_password'].includes(this.$route.name);
-    }
-  },
+  // computed: {
+  //   isAuthPage() {
+  //     return ['login', 'registor', 'forgot_password'].includes(this.$route.name);
+  //   }
+  // },
   methods: {
     handleAddRoutes() {
       const newRoutes = [
