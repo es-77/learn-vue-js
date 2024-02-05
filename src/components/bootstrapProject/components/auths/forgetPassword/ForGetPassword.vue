@@ -4,10 +4,6 @@
       <div class="row justify-content-center">
         <div class="col-md-8 col-lg-6 col-xl-5">
           <div>
-            <a href="index.html" class="mb-5 d-block auth-logo">
-              <img src="assets/images/logo-dark.png" alt="" height="22" class="logo logo-dark" />
-              <img src="assets/images/logo-light.png" alt="" height="22" class="logo logo-light" />
-            </a>
             <div class="card">
               <div class="card-body p-4">
                 <div class="text-center mt-2">

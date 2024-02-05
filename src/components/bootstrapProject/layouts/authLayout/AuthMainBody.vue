@@ -1,5 +1,4 @@
 <template>
-  <p>AuthMainBody</p>
   <Login />
   <RegisterVue />
   <ForGetPasswordVue />
