@@ -18,6 +18,20 @@
       "email": "hikysic@mailinator.com",
       "password": "Pa$$w0rd!",
       "phone": "+1 (411) 155-5807"
+    },
+    {
+      "id": "3054",
+      "name": "123123",
+      "email": "lyrase@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "phone": "+1 (896) 386-9218"
+    },
+    {
+      "id": "5ea7",
+      "name": "123123",
+      "email": "lyrase@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "phone": "+1 (896) 386-9218"
     }
   ],
   "roles": [
@@ -36,6 +50,14 @@
     {
       "id": "1329",
       "name": "Empoyee"
+    },
+    {
+      "id": "fe00",
+      "name": "Charlotte Mcintyre"
+    },
+    {
+      "id": "8262",
+      "name": "admin123123"
     }
   ],
   "permission": {

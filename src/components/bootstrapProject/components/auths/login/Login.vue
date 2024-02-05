@@ -20,23 +20,37 @@
                 <p class="text-muted">Sign in to continue to Minible.</p>
               </div>
               <div class="p-2 mt-4">
-                <form action="https://themesbrand.com/minible/layouts/index.html">
+                <Form @submit="onSubmit" :validation-schema="schema">
                   <div class="mb-3">
-                    <label class="form-label" for="username">Username</label>
-                    <input type="text" class="form-control" id="username" placeholder="Enter username" />
+                    <labe class="form-label" for="email">User Email</labe>
+                    <Field type="text" class="form-control" id="email" name="email" placeholder="Enter email" />
+                    <ErrorMessage class="text-danger" name="email" />
                   </div>
 
                   <div class="mb-3">
                     <div class="float-end">
                       <a href="auth-recoverpw.html" class="text-muted">Forgot password?</a>
                     </div>
-                    <label class="form-label" for="userpassword">Password</label>
-                    <input type="password" class="form-control" id="userpassword" placeholder="Enter password" />
+                    <label class="form-label" for="password">Password</label>
+                    <Field
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      name="password"
+                      placeholder="Enter password"
+                    />
+                    <ErrorMessage class="text-danger" name="password" />
                   </div>
 
                   <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="auth-remember-check" />
+                    <Field
+                      type="checkbox"
+                      class="form-check-input"
+                      id="auth-remember-check"
+                      name="auth-remember-check"
+                    />
                     <label class="form-check-label" for="auth-remember-check">Remember me</label>
+                    <ErrorMessage class="text-danger" name="auth-remember-check" />
                   </div>
 
                   <div class="mt-3 text-end">
@@ -73,7 +87,7 @@
                       <a href="auth-register.html" class="fw-medium text-primary"> Signup now </a>
                     </p>
                   </div>
-                </form>
+                </Form>
               </div>
             </div>
           </div>
@@ -90,8 +104,27 @@
 </template>
 
 <script>
+import { Form, Field, ErrorMessage } from 'vee-validate';
+// LoginValidationBootstrap
+// import axios from 'axios';
+import { LoginValidationBootstrap } from './LoginValidationBootstrap';
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
-  name: 'Login'
+  name: 'Login',
+  components: {
+    Form,
+    Field,
+    ErrorMessage
+  },
+  data() {
+    return {
+      schema: LoginValidationBootstrap
+    };
+  },
+  methods: {
+    onSubmit(value) {
+      console.log(value);
+    }
+  }
 };
 </script>

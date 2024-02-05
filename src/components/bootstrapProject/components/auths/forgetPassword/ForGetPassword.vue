@@ -18,10 +18,11 @@
                   <div class="alert alert-success text-center mb-4" role="alert">
                     Enter your Email and instructions will be sent to you!
                   </div>
-                  <form action="https://themesbrand.com/minible/layouts/index.html">
+                  <Form @submit="onSubmit" :validation-schema="schema">
                     <div class="mb-3">
-                      <label class="form-label" for="useremail">Email</label>
-                      <input type="email" class="form-control" id="useremail" placeholder="Enter email" />
+                      <labe class="form-label" for="email">User Email</labe>
+                      <Field type="text" class="form-control" id="email" name="email" placeholder="Enter email" />
+                      <ErrorMessage class="text-danger" name="email" />
                     </div>
 
                     <div class="mt-3 text-end">
@@ -33,7 +34,7 @@
                         Remember It ? <a href="auth-login.html" class="fw-medium text-primary"> Signin </a>
                       </p>
                     </div>
-                  </form>
+                  </Form>
                 </div>
               </div>
             </div>
@@ -47,7 +48,24 @@
 </template>
 
 <script>
+import { Form, Field, ErrorMessage } from 'vee-validate';
+import { ForGetPasswordBoostrapValidation } from './ForGetPasswordBoostrapValidation';
 export default {
-  name: 'ForGetPassword'
+  name: 'ForGetPassword',
+  components: {
+    Form,
+    Field,
+    ErrorMessage
+  },
+  data() {
+    return {
+      schema: ForGetPasswordBoostrapValidation
+    };
+  },
+  methods: {
+    onSubmit(value) {
+      console.log(value);
+    }
+  }
 };
 </script>

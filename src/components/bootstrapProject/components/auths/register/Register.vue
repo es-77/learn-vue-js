@@ -20,24 +20,38 @@
                 <p class="text-muted">Get your free Minible account now.</p>
               </div>
               <div class="p-2 mt-4">
-                <form action="https://themesbrand.com/minible/layouts/index.html">
+                <Form @submit="onSubmit" :validation-schema="schema">
                   <div class="mb-3">
-                    <label class="form-label" for="useremail">Email</label>
-                    <input type="email" class="form-control" id="useremail" placeholder="Enter email" />
+                    <label class="form-label" for="name">Username</label>
+                    <Field type="text" class="form-control" id="name" name="name" placeholder="Enter name" />
+                    <ErrorMessage class="text-danger" name="name" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="email">Email</label>
+                    <Field type="email" class="form-control" id="email" name="email" placeholder="Enter email" />
+                    <ErrorMessage class="text-danger" name="email" />
                   </div>
 
                   <div class="mb-3">
-                    <label class="form-label" for="username">Username</label>
-                    <input type="text" class="form-control" id="username" placeholder="Enter username" />
-                  </div>
-
-                  <div class="mb-3">
-                    <label class="form-label" for="userpassword">Password</label>
-                    <input type="password" class="form-control" id="userpassword" placeholder="Enter password" />
+                    <label class="form-label" for="password">Password</label>
+                    <Field
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      name="password"
+                      placeholder="Enter password"
+                    />
+                    <ErrorMessage class="text-danger" name="password" />
                   </div>
 
                   <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="auth-terms-condition-check" />
+                    <Field
+                      type="checkbox"
+                      class="form-check-input"
+                      id="auth-terms-condition-check"
+                      name="auth-terms-condition-check"
+                    />
+                    <ErrorMessage class="text-danger" name="auth-terms-condition-check" />
                     <label class="form-check-label" for="auth-terms-condition-check"
                       >I accept <a href="javascript: void(0);" class="text-reset">Terms and Conditions</a></label
                     >
@@ -76,7 +90,7 @@
                       Already have an account ? <a href="auth-login.html" class="fw-medium text-primary"> Login</a>
                     </p>
                   </div>
-                </form>
+                </Form>
               </div>
             </div>
           </div>
@@ -89,8 +103,20 @@
 </template>
 
 <script>
+import { Form, Field, ErrorMessage } from 'vee-validate';
+import { RegisterValidationBootstrap } from './RegisterValidationBootstrap';
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
-  name: 'Register'
+  name: 'Register',
+  components: {
+    Form,
+    Field,
+    ErrorMessage
+  },
+  data() {
+    return {
+      schema: RegisterValidationBootstrap
+    };
+  }
 };
 </script>
