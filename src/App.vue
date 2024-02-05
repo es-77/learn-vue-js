@@ -29,14 +29,16 @@
   <!-- <PiniaMainComponent /> -->
   <!-- <VeeValidate /> -->
   <!-- <BuildInDirectiveMainVue /> -->
-  <AuthBodyVue v-if="isAuthPage" />
-  <BodyContentVue v-else />
+  <!-- <AuthBodyVue v-if="isAuthPage" />
+  <BodyContentVue v-else /> -->
   <!-- <RoutingMethodMainVue /> -->
+  <BootstrapProjectMainComponentVue />
 </template>
 
 <script>
-import AuthBodyVue from './components/projectSetup/layout/authLayout/AuthBody.vue';
-import BodyContentVue from './components/projectSetup/layout/BodyContent.vue';
+import BootstrapProjectMainComponentVue from './components/bootstrapProject/BootstrapProjectMainComponent.vue';
+// import AuthBodyVue from './components/projectSetup/layout/authLayout/AuthBody.vue';
+// import BodyContentVue from './components/projectSetup/layout/BodyContent.vue';
 // import RoutingMethodMainVue from './components/routingMethods/RoutingMethodMain.vue';
 // import BuildInDirectiveMainVue from './components/buildInDirectives/BuildInDirectiveMain.vue';
 // import HelloWorld from './components/HelloWorld.vue'
@@ -99,9 +101,10 @@ export default {
     // PiniaMainComponent
     // VeeValidate
     // BuildInDirectiveMainVue
-    BodyContentVue,
-    AuthBodyVue
+    // BodyContentVue,
+    // AuthBodyVue
     // RoutingMethodMainVue
+    BootstrapProjectMainComponentVue
   },
   computed: {
     isAuthPage() {

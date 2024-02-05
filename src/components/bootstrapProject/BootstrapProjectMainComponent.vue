@@ -1,9 +1,24 @@
 <template>
   <p>BootstrapProjectMainComponent</p>
+  <button class="btn btn-primary">Primary Button</button>
+  <BoostrapMainVue v-if="isAuthPage" />
+  <AuthMainBodyVue v-else />
 </template>
 
 <script>
+import AuthMainBodyVue from './layouts/authLayout/AuthMainBody.vue';
+import BoostrapMainVue from './layouts/BoostrapMain.vue';
+
 export default {
-  name: 'BootstrapProjectMainComponent'
+  name: 'BootstrapProjectMainComponent',
+  components: {
+    BoostrapMainVue,
+    AuthMainBodyVue
+  },
+  computed: {
+    isAuthPage() {
+      return ['login', 'registor', 'forgot_password'].includes(this.$route.name);
+    }
+  }
 };
 </script>
