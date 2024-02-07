@@ -11,7 +11,15 @@ import ForGetPassword from '../components/auths/forgetPassword/ForGetPassword.vu
 import PageNotFound from '../layouts/commonPage/PageNotFound.vue'
 // import BoostrapDashBoard from '../components/dashboard/BoostrapDashBoard.vue'
 import DasgBoard from '../components/dashboard/BoostrapDashBoard.vue'
+import UserCreate from '../components/user/UserCreate.vue'
+import UserUpdate from '../components/user/UserUpdate.vue'
+import UserListing from '../components/user/UserListing.vue'
+import UserDelete from '../components/user/UserDelete.vue'
 
+import RoleAdd from '../components/role/RoleAdd.vue'
+import RoleUpdate from '../components/role/RoleUpdate.vue'
+import RoleDelete from '../components/role/RoleDelete.vue'
+import RoleListing from '../components/role/RoleListing.vue'
 let routesArray = [
     {
         name: 'login',
@@ -49,7 +57,71 @@ let routesArray = [
         meta: {
             is_auth: false
         }
-    }
+    },
+    {
+        name: '/user_add',
+        path: '/user_add',
+        component: UserCreate,
+        meta: {
+            is_auth: false
+        }
+    },
+    {
+        name: '/user_update',
+        path: '/user_update',
+        component: UserUpdate,
+        meta: {
+            is_auth: false
+        }
+    },
+    {
+        name: '/user_listing',
+        path: '/user_listing',
+        component: UserListing,
+        meta: {
+            is_auth: false
+        }
+    },
+    {
+        name: '/user_delete',
+        path: '/user_delete',
+        component: UserDelete,
+        meta: {
+            is_auth: false
+        }
+    },
+    {
+        name: '/role_lising',
+        path: '/role_lising',
+        component: RoleListing,
+        meta: {
+            is_auth: false
+        }
+    },
+    {
+        name: '/role_add',
+        path: '/role_add',
+        component: RoleAdd,
+        meta: {
+            is_auth: false
+        }
+    },
+    {
+        name: '/role_update',
+        path: '/role_update',
+        component: RoleUpdate,
+        meta: {
+            is_auth: false
+        }
+    },
+    {
+        name: '/role_delete',
+        path: '/role_delete',
+        component: RoleDelete,
+        meta: {
+            is_auth: false
+        }
+    },
 ]
 
 const BoostrapFrontEndRoute = createRouter({

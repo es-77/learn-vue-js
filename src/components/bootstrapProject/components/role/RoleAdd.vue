@@ -82,6 +82,6 @@
 
 <script>
 export default {
-  name: 'UserCreate'
+  name: 'RoleAdd'
 };
 </script>

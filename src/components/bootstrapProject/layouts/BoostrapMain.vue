@@ -3,7 +3,6 @@
   <!-- ========== Left Sidebar Start ========== -->
   <BoostrapSideBarVue />
   <!-- Left Sidebar End -->
-  <!-- <DashboardVue /> -->
   <router-view></router-view>
   <BoostrapRightSidebarVue />
 
