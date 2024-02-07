@@ -1,15 +1,14 @@
 <template>
-  <div class="main-content">
-    <div class="page-content">
-      <div class="container-fluid">
-        <p>RoleUpdate</p>
-      </div>
-    </div>
-  </div>
+  <RoleAddVue />
 </template>
 
 <script>
+import RoleAddVue from './RoleAdd.vue';
+
 export default {
-  name: 'RoleUpdate'
+  name: 'RoleUpdate',
+  components: {
+    RoleAddVue
+  }
 };
 </script>

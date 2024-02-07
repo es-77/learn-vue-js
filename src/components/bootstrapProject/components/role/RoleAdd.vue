@@ -9,48 +9,26 @@
                 <div class="row">
                   <div class="col-lg-12">
                     <div class="mt-4">
-                      <form>
+                      <Form @submit="onSubmit" :validation-schema="schema">
                         <div class="mb-3">
-                          <label class="form-label" for="formrow-Fullname-input">Full Name</label>
-                          <input
+                          <label class="form-label" for="formrow-Fullname-input">Role Name</label>
+                          <Field
                             type="text"
                             class="form-control"
                             id="formrow-Fullname-input"
                             placeholder="Enter your full Name"
+                            name="name"
                           />
+                          <ErrorMessage class="text-danger" name="name" /><br />
                         </div>
 
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="mb-3">
-                              <label class="form-label" for="formrow-email-input">Email</label>
-                              <input
-                                type="email"
-                                class="form-control"
-                                id="formrow-email-input"
-                                placeholder="Enter your email address"
-                              />
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="mb-3">
-                              <label class="form-label" for="formrow-password-input">Password</label>
-                              <input
-                                type="password"
-                                class="form-control"
-                                id="formrow-password-input"
-                                placeholder="Enter your password"
-                              />
-                            </div>
-                          </div>
-                        </div>
                         <div class="d-flex flex-wrap gap-3 mt-3">
                           <button type="submit" class="btn btn-primary waves-effect waves-light w-md">Submit</button>
                           <button type="reset" class="btn btn-outline-danger waves-effect waves-light w-md">
                             Reset
                           </button>
                         </div>
-                      </form>
+                      </Form>
                     </div>
                   </div>
                 </div>
@@ -58,30 +36,30 @@
             </div>
           </div>
         </div>
-        <!-- End Form Layout -->
       </div>
-      <!-- container-fluid -->
     </div>
-    <!-- End Page-content -->
-
-    <footer class="footer">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-6"></div>
-          <div class="col-sm-6">
-            <div class="text-sm-end d-none d-sm-block">
-              Crafted with <i class="mdi mdi-heart text-danger"></i> by
-              <a href="https://themesbrand.com/" target="_blank" class="text-reset">Themesbrand</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
   </div>
 </template>
 
 <script>
+import { BootstrapRoleValidation } from './BootstrapRoleValidation';
+import { Form, Field, ErrorMessage } from 'vee-validate';
 export default {
-  name: 'RoleAdd'
+  name: 'RoleAdd',
+  data() {
+    return {
+      schema: BootstrapRoleValidation
+    };
+  },
+  components: {
+    Form,
+    Field,
+    ErrorMessage
+  },
+  methods: {
+    onSubmit(value) {
+      console.log(value);
+    }
+  }
 };
 </script>
