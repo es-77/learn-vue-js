@@ -1,15 +1,14 @@
 <template>
-  <div class="main-content">
-    <div class="page-content">
-      <div class="container-fluid">
-        <p>UserUpdate</p>
-      </div>
-    </div>
-  </div>
+  <UserCreateVue />
 </template>
 
 <script>
+import UserCreateVue from './UserCreate.vue';
+
 export default {
-  name: 'UserUpdate'
+  name: 'UserUpdate',
+  components: {
+    UserCreateVue
+  }
 };
 </script>

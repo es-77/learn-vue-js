@@ -1,16 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-// import LoginForm from './components/login/LoginForm.vue';
-// import RegistorForm from './components/registor/RegistorForm.vue';
-// import CreatePermission from './components/permission/CreatePermission.vue';
-// import { getUser } from './common/LocalStoreage';
-
 import Login from '../components/auths/login/Login.vue'
 import Register from '../components/auths/register/Register.vue'
 import ForGetPassword from '../components/auths/forgetPassword/ForGetPassword.vue'
 import PageNotFound from '../layouts/commonPage/PageNotFound.vue'
-// import BoostrapDashBoard from '../components/dashboard/BoostrapDashBoard.vue'
 import DasgBoard from '../components/dashboard/BoostrapDashBoard.vue'
+
 import UserCreate from '../components/user/UserCreate.vue'
 import UserUpdate from '../components/user/UserUpdate.vue'
 import UserListing from '../components/user/UserListing.vue'
@@ -20,6 +15,13 @@ import RoleAdd from '../components/role/RoleAdd.vue'
 import RoleUpdate from '../components/role/RoleUpdate.vue'
 import RoleDelete from '../components/role/RoleDelete.vue'
 import RoleListing from '../components/role/RoleListing.vue'
+
+import PermissionDelete from '../components/permissionAssign/PermissionDelete.vue'
+import PermissionUpdate from '../components/permissionAssign/PermissionUpdate.vue'
+import PermissionListing from '../components/permissionAssign/PermissionListing.vue'
+import PermissionAssign from '../components/permissionAssign/PermissionAssign.vue'
+
+
 let routesArray = [
     {
         name: 'login',
@@ -118,6 +120,38 @@ let routesArray = [
         name: '/role_delete',
         path: '/role_delete',
         component: RoleDelete,
+        meta: {
+            is_auth: false
+        }
+    },
+    {
+        name: '/permission_delete',
+        path: '/permission_delete',
+        component: PermissionDelete,
+        meta: {
+            is_auth: false
+        }
+    },
+    {
+        name: '/permission_update',
+        path: '/permission_update',
+        component: PermissionUpdate,
+        meta: {
+            is_auth: false
+        }
+    },
+    {
+        name: '/permission_listing',
+        path: '/permission_listing',
+        component: PermissionListing,
+        meta: {
+            is_auth: false
+        }
+    },
+    {
+        name: '/permission_add',
+        path: '/permission_add',
+        component: PermissionAssign,
         meta: {
             is_auth: false
         }

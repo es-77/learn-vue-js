@@ -27,8 +27,8 @@
             </router-link>
           </li>
           <li>
-            <a href="javascript: void(0);" class="has-arrow">User</a>
-            <ul class="sub-menu" aria-expanded="true">
+            <a href="#" class="has-arrow">User</a>
+            <ul class="sub-menu" :class="{ show: expandedMenus.includes('user') }">
               <li><router-link to="/user_listing">User Listing</router-link></li>
               <li><router-link to="/user_add">User Add</router-link></li>
               <li><router-link to="/user_update">User Update</router-link></li>
@@ -36,8 +36,8 @@
             </ul>
           </li>
           <li>
-            <a href="javascript: void(0);" class="has-arrow">Role</a>
-            <ul class="sub-menu" aria-expanded="true">
+            <a href="#" @click="toggleSubMenu('role')" class="has-arrow">Role</a>
+            <ul class="sub-menu" :class="{ show: expandedMenus.includes('role') }">
               <li><router-link to="/role_lising">Role Lising</router-link></li>
               <li><router-link to="/role_add">Role Add</router-link></li>
               <li><router-link to="/role_update">Role Update</router-link></li>
@@ -45,12 +45,12 @@
             </ul>
           </li>
           <li>
-            <a href="javascript: void(0);" class="has-arrow">Permissions</a>
-            <ul class="sub-menu" aria-expanded="true">
-              <li><router-link to="/role_lising">Permissions Lising</router-link></li>
-              <li><router-link to="/role_add">Permission Assign Role</router-link></li>
-              <li><router-link to="/role_update">Permission Assign Update</router-link></li>
-              <li><router-link to="/role_delete">Permission Assing Role Delete</router-link></li>
+            <a href="#" class="has-arrow">Permissions</a>
+            <ul class="sub-menu" :class="{ show: expandedMenus.includes('permission') }">
+              <li><router-link to="/permission_listing">Permissions Lising</router-link></li>
+              <li><router-link to="/permission_add">Permission Assign Role</router-link></li>
+              <li><router-link to="/permission_update">Permission Assign Update</router-link></li>
+              <li><router-link to="/permission_delete">Permission Assing Role Delete</router-link></li>
             </ul>
           </li>
         </ul>
@@ -65,13 +65,36 @@ export default {
   mounted() {
     this.initializeSimpleBar();
   },
+  data() {
+    return {
+      isCollapsed: false,
+      expandedMenus: [] // Keep track of expanded menu items
+    };
+  },
   methods: {
     initializeSimpleBar() {
       const sidebarMenuScroll = document.querySelector('.sidebar-menu-scroll');
       if (sidebarMenuScroll) {
         new SimpleBar(sidebarMenuScroll);
       }
+    },
+    toggleCollapse() {
+      this.isCollapsed = !this.isCollapsed;
+    },
+    toggleSubMenu(menuItem) {
+      if (this.expandedMenus.includes(menuItem)) {
+        this.expandedMenus = this.expandedMenus.filter(item => item !== menuItem);
+      } else {
+        this.expandedMenus.push(menuItem);
+      }
     }
   }
 };
 </script>
+
+
+<style>
+.collapsed .sidebar-menu-scroll {
+  width: 0;
+}
+</style>

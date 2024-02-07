@@ -2,7 +2,7 @@
   <div class="main-content">
     <div class="page-content">
       <div class="container-fluid">
-        <p>RoleDelete</p>
+        <p>PermissionUpdate</p>
       </div>
     </div>
   </div>
@@ -10,6 +10,6 @@
 
 <script>
 export default {
-  name: 'RoleDelete'
+  name: 'PermissionUpdate'
 };
 </script>
