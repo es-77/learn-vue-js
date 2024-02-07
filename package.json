@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.1",
+    "@mdi/font": "^7.4.47",
     "@popperjs/core": "^2.11.8",
     "axios": "^1.6.7",
     "bootstrap": "^5.3.2",
@@ -16,6 +17,7 @@
     "core-js": "^3.8.3",
     "dotenv": "^16.4.1",
     "pinia": "^2.1.7",
+    "simplebar": "^6.2.5",
     "vee-validate": "^4.12.4",
     "vue": "^3.4.15",
     "vue-axios": "^3.5.2",

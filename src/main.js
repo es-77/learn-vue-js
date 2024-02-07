@@ -12,6 +12,7 @@ import { hasPermission } from './components/projectSetup/directives/HasPermissio
 import 'vue-toast-notification/dist/theme-bootstrap.css';
 import ToastPlugin from 'vue-toast-notification';
 import BoostrapFrontEndRoute from './components/bootstrapProject/routes/BoostrapFrontEndRoute';
+import 'simplebar/dist/simplebar.min.css';
 
 // import "bootstrap/dist/css/bootstrap.min.css"
 // import "bootstrap"

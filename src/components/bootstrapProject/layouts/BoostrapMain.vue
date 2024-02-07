@@ -3,14 +3,14 @@
   <!-- ========== Left Sidebar Start ========== -->
   <BoostrapSideBarVue />
   <!-- Left Sidebar End -->
-  <DashboardVue />
+  <!-- <DashboardVue /> -->
+  <router-view></router-view>
   <BoostrapRightSidebarVue />
 
   <!-- <BoostrapTopbarVue /> -->
 </template>
 
 <script>
-import DashboardVue from '../components/dashboard/Dashboard.vue';
 import BoostrapRightSidebarVue from './BoostrapRightSidebar.vue';
 import BoostrapSideBarVue from './BoostrapSideBar.vue';
 import BoostrapTopbarVue from './BoostrapTopbar.vue';
@@ -18,8 +18,6 @@ import BoostrapTopbarVue from './BoostrapTopbar.vue';
 export default {
   name: 'BoostrapMain',
   components: {
-    // BoostrapTopbarVue,
-    DashboardVue,
     BoostrapRightSidebarVue,
     BoostrapSideBarVue,
     BoostrapTopbarVue

@@ -8,6 +8,10 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Login from '../components/auths/login/Login.vue'
 import Register from '../components/auths/register/Register.vue'
 import ForGetPassword from '../components/auths/forgetPassword/ForGetPassword.vue'
+import PageNotFound from '../layouts/commonPage/PageNotFound.vue'
+// import BoostrapDashBoard from '../components/dashboard/BoostrapDashBoard.vue'
+import DasgBoard from '../components/dashboard/BoostrapDashBoard.vue'
+
 let routesArray = [
     {
         name: 'login',
@@ -33,6 +37,19 @@ let routesArray = [
             is_auth: false
         }
     },
+    {
+        name: 'RouterPageNotFound',
+        path: '/:pathMatch(.*)*',
+        component: PageNotFound
+    },
+    {
+        name: '/dasboard',
+        path: '/',
+        component: DasgBoard,
+        meta: {
+            is_auth: false
+        }
+    }
 ]
 
 const BoostrapFrontEndRoute = createRouter({
