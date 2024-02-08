@@ -9,7 +9,7 @@
                 <div class="row">
                   <div class="col-lg-12">
                     <div class="mt-4">
-                      <Form @submit="onSubmit" :validation-schema="schema">
+                      <Form v-on:submit="handleForm" :validation-schema="schema">
                         <div class="mb-3">
                           <label class="form-label" for="formrow-Fullname-input">Full Name</label>
                           <Field
@@ -32,6 +32,7 @@
                                 id="formrow-email-input"
                                 placeholder="Enter your email address"
                                 name="email"
+                                v-model="email"
                               />
                               <ErrorMessage class="text-danger" name="email" /><br />
                             </div>
@@ -45,11 +46,13 @@
                                 id="formrow-password-input"
                                 placeholder="Enter your password"
                                 name="password"
+                                v-model="password"
                               />
                               <ErrorMessage class="text-danger" name="password" /><br />
                             </div>
                           </div>
                         </div>
+                        <Field type="hidden" name="userId" id="userId" v-model="id" />
                         <div class="d-flex flex-wrap gap-3 mt-3">
                           <button type="submit" class="btn btn-primary waves-effect waves-light w-md">Submit</button>
                           <button type="reset" class="btn btn-outline-danger waves-effect waves-light w-md">
@@ -75,9 +78,16 @@ import { Form, Field, ErrorMessage } from 'vee-validate';
 import UserSaveApiCallMixins from './userMixins/UserSaveApiCallMixins.js';
 export default {
   name: 'UserCreate',
+  props: {
+    user: {}
+  },
   data() {
     return {
-      schema: BootstrapUserVaildation
+      schema: BootstrapUserVaildation,
+      id: 0,
+      name: '',
+      email: '',
+      password: ''
     };
   },
   components: {
@@ -85,6 +95,19 @@ export default {
     Field,
     ErrorMessage
   },
-  mixins: [UserSaveApiCallMixins]
+  mixins: [UserSaveApiCallMixins],
+  watch: {
+    user: {
+      handler(newVal) {
+        if (newVal) {
+          this.id = newVal.id || 0;
+          this.name = newVal.name || '';
+          this.email = newVal.email || '';
+          this.password = newVal.password || '';
+        }
+      },
+      immediate: true // Trigger the handler immediately on component creation
+    }
+  }
 };
 </script>

@@ -7,10 +7,11 @@
     },
     {
       "id": "1",
-      "name": "Emmanuel Saleem",
+      "name": "123",
       "email": "admin@admin.com",
       "password": "123123123",
-      "phone": "+923041068389"
+      "phone": "+923041068389",
+      "userId": "1"
     },
     {
       "id": "94ed",
@@ -38,6 +39,32 @@
       "name": "hello",
       "email": "ikonic@test.com",
       "password": "123123123"
+    },
+    {
+      "id": "fe7e",
+      "name": "test",
+      "email": "admin@admin.com",
+      "password": "123123"
+    },
+    {
+      "id": "c6ca",
+      "name": "123",
+      "email": "adm123123in@gmail.com",
+      "password": "123123"
+    },
+    {
+      "id": "270d",
+      "name": "admin",
+      "email": "adm123in@gmail.com",
+      "password": "12312312",
+      "userId": 0
+    },
+    {
+      "id": "6333",
+      "name": "new add",
+      "email": "a123dmin@admin.com",
+      "password": "123123",
+      "userId": 0
     }
   ],
   "roles": [
