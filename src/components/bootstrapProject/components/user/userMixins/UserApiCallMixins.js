@@ -8,7 +8,8 @@ export default {
                 .get(BackEndApiRoutes.users.user_get)
                 .catch(error => console.error('Search Error:', error));
             this.users = response?.data ?? [];
-        }
+        },
+
     },
     mounted() {
         this.getUsers();

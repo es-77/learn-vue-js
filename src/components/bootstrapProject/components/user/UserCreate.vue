@@ -72,6 +72,7 @@
 <script>
 import { BootstrapUserVaildation } from './BootstrapUserVaildation';
 import { Form, Field, ErrorMessage } from 'vee-validate';
+import UserSaveApiCallMixins from './userMixins/UserSaveApiCallMixins.js';
 export default {
   name: 'UserCreate',
   data() {
@@ -84,10 +85,6 @@ export default {
     Field,
     ErrorMessage
   },
-  methods: {
-    onSubmit(value) {
-      console.log(value);
-    }
-  }
+  mixins: [UserSaveApiCallMixins]
 };
 </script>

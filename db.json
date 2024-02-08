@@ -6,7 +6,7 @@
       "password": "Pa$$w0rd!"
     },
     {
-      "id": 1,
+      "id": "1",
       "name": "Emmanuel Saleem",
       "email": "admin@admin.com",
       "password": "123123123",
@@ -32,6 +32,12 @@
       "email": "lyrase@mailinator.com",
       "password": "Pa$$w0rd!",
       "phone": "+1 (896) 386-9218"
+    },
+    {
+      "id": "d3c0",
+      "name": "hello",
+      "email": "ikonic@test.com",
+      "password": "123123123"
     }
   ],
   "roles": [
@@ -172,14 +178,14 @@
   },
   "user_role": [
     {
-      "id": 1,
+      "id": "1",
       "user_id": 1,
       "role_id": "3b5f"
     }
   ],
   "role_permission": [
     {
-      "id": 1,
+      "id": "1",
       "role_id": "3b5f",
       "permissions": [
         "dashbord_view",
