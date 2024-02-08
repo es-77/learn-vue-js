@@ -20,6 +20,7 @@ function BackEndApiRoutes() {
         roles: {
             role_get: `${home}/roles`,
             role_save: `${home}/roles`,
+            role_delete: `${home}/roles`,
         },
         userRole: {
             user_role_get: `${home}/user_role`,

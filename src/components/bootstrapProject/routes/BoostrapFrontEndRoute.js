@@ -110,7 +110,7 @@ let routesArray = [
     },
     {
         name: '/role_update',
-        path: '/role_update',
+        path: '/role_update/:id',
         component: RoleUpdate,
         meta: {
             is_auth: false

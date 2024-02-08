@@ -40,7 +40,7 @@
             <ul class="sub-menu" :class="{ show: expandedMenus.includes('role') }">
               <li><router-link to="/role_lising">Role Lising</router-link></li>
               <li><router-link to="/role_add">Role Add</router-link></li>
-              <li><router-link to="/role_update">Role Update</router-link></li>
+              <li><router-link to="/role_update/1">Role Update</router-link></li>
               <li><router-link to="/role_delete">Role Delete</router-link></li>
             </ul>
           </li>

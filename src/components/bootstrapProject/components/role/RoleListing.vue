@@ -16,6 +16,9 @@
                     <tr>
                       <th>ID</th>
                       <th>Name</th>
+                      <th>Delete</th>
+                      <th>Update</th>
+                      <th>Add</th>
                     </tr>
                   </thead>
 
@@ -23,6 +26,11 @@
                     <tr v-for="role in roles" :key="role.id">
                       <td>{{ role.id }}</td>
                       <td>{{ role.name }}</td>
+                      <td><button @click="handleDelete(role.id)" class="btn btn-danger">Delete Role</button></td>
+                      <td>
+                        <router-link :to="'role_update/' + role.id" class="btn btn-primary">Update Role</router-link>
+                      </td>
+                      <td><router-link to="role_add" class="btn btn-secondary">Add Role</router-link></td>
                     </tr>
                   </tbody>
                 </table>
