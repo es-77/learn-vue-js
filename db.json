@@ -238,5 +238,22 @@
         "hr_update"
       ]
     }
+  ],
+  "boostrap_role_permission": [
+    {
+      "id": "be03",
+      "role_id": "3b5f",
+      "role_name": "admin",
+      "permissions": [
+        "permission_add",
+        "role_add",
+        "role_update",
+        "role_delete",
+        "role_view",
+        "permission_view",
+        "permission_delete",
+        "permission_update"
+      ]
+    }
   ]
 }

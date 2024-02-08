@@ -23,12 +23,15 @@
                       <div class="row">
                         <div class="col-md-12">
                           <div class="form-floating mb-3">
-                            <Field name="role_id" as="select" class="form-select">
+                            <Field name="role_id" as="select" @change="handleRoleName" class="form-select">
                               <option value="">Select Role</option>
-                              <option v-for="role in users" :key="role.id" :value="role.id">{{ role.name }}</option>
+                              <option v-for="role in users" :key="role.id" :data-roleName="role.name" :value="role.id">
+                                {{ role.name }}
+                              </option>
                             </Field>
                             <ErrorMessage name="role_id" class="text-danger" />
                           </div>
+                          <Field name="role_name" type="hidden" v-model="roleName" />
                         </div>
                       </div>
 
@@ -100,8 +103,16 @@ export default {
       permissions: [],
       dataBasePermission: [],
       toastMessage: '',
-      toastVariant: 'info'
+      toastVariant: 'info',
+      roleName: ''
     };
+  },
+  methods: {
+    handleRoleName(event) {
+      const selectedOption = event.target.options[event.target.selectedIndex];
+      const rolename = selectedOption.dataset.rolename;
+      this.roleName = rolename;
+    }
   },
   mixins: [PermissionAssingApiCallMixins]
 };

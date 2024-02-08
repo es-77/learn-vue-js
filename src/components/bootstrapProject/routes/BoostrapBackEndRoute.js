@@ -35,7 +35,12 @@ function BoostrapBackEndRoute() {
         userPermission: {
             user_permission_get: `${home}/user_permission`,
             user_permission_save: `${home}/user_permission`,
-        }
+        },
+        boostrapRolePermission: {
+            role_permission_get: `${home}/boostrap_role_permission`,
+            role_permission_save: `${home}/boostrap_role_permission`,
+            role_permission_delete: `${home}/boostrap_role_permission`,
+        },
     };
 }
 
