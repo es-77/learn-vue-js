@@ -18,6 +18,9 @@
                       <th>Name</th>
                       <th>Email</th>
                       <th>Password</th>
+                      <th>Delete</th>
+                      <th>Update</th>
+                      <th>Add</th>
                     </tr>
                   </thead>
 
@@ -27,6 +30,17 @@
                       <td>{{ user.name }}</td>
                       <td>{{ user.email }}</td>
                       <td>{{ user.password }}</td>
+                      <td>
+                        <button type="button" class="btn-primary btn" @click="handleDelete(user.id)">
+                          Delete User
+                        </button>
+                      </td>
+                      <td>
+                        <router-link class="btn btn-secondary" :to="'user_update/' + user.id">Update User</router-link>
+                      </td>
+                      <td>
+                        <router-link class="btn btn-dark" to="user_add">Add User</router-link>
+                      </td>
                     </tr>
                   </tbody>
                 </table>

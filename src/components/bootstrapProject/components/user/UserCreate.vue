@@ -18,6 +18,7 @@
                             id="formrow-Fullname-input"
                             placeholder="Enter your full Name"
                             name="name"
+                            v-model="name"
                           />
                           <ErrorMessage class="text-danger" name="name" /><br />
                         </div>

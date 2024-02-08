@@ -70,7 +70,7 @@ let routesArray = [
     },
     {
         name: '/user_update',
-        path: '/user_update',
+        path: '/user_update/:id',
         component: UserUpdate,
         meta: {
             is_auth: false

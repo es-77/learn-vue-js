@@ -5,7 +5,7 @@ export default {
     methods: {
         async getUser() {
             const response = await axios
-                .get(`${BackEndApiRoutes.users.user_get}/1`)
+                .get(`${BackEndApiRoutes.users.user_get}/${this.$route.params.id}`)
                 .catch(error => console.error('Search Error:', error));
             this.user = response?.data ?? [];
         },

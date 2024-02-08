@@ -31,7 +31,7 @@
             <ul class="sub-menu" :class="{ show: expandedMenus.includes('user') }">
               <li><router-link to="/user_listing">User Listing</router-link></li>
               <li><router-link to="/user_add">User Add</router-link></li>
-              <li><router-link to="/user_update">User Update</router-link></li>
+              <li><router-link to="/user_update/1">User Update</router-link></li>
               <li><router-link to="/user_delete">User Delete</router-link></li>
             </ul>
           </li>
