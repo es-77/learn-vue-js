@@ -14,39 +14,40 @@
                 >
                   <thead>
                     <tr>
+                      <th>ID</th>
                       <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
+                      <th>Email</th>
+                      <th>Password</th>
                     </tr>
                   </thead>
 
                   <tbody>
-                    <tr>
-                      <td>Tiger Nixon</td>
-                      <td>System Architect</td>
-                      <td>Edinburgh</td>
-                      <td>61</td>
-                      <td>2011/04/25</td>
-                      <td>$320,800</td>
+                    <tr v-for="user in users" :key="user.id">
+                      <td>{{ user.id }}</td>
+                      <td>{{ user.name }}</td>
+                      <td>{{ user.email }}</td>
+                      <td>{{ user.password }}</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
           </div>
-          <!-- end col -->
         </div>
-        <!-- end row -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import UserApiCallMixins from './userMixins/UserApiCallMixins.js';
 export default {
-  name: 'UserListing'
+  name: 'UserListing',
+  data() {
+    return {
+      users: []
+    };
+  },
+  mixins: [UserApiCallMixins]
 };
 </script>
