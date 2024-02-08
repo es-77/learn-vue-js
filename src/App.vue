@@ -32,11 +32,13 @@
   <!-- <AuthBodyVue v-if="isAuthPage" />
   <BodyContentVue v-else /> -->
   <!-- <RoutingMethodMainVue /> -->
-  <BootstrapProjectMainComponentVue />
+  <!-- <BootstrapProjectMainComponentVue /> -->
+  <MixinsMainComponentsVue />
 </template>
 
 <script>
-import BootstrapProjectMainComponentVue from './components/bootstrapProject/BootstrapProjectMainComponent.vue';
+// import BootstrapProjectMainComponentVue from './components/bootstrapProject/BootstrapProjectMainComponent.vue';
+import MixinsMainComponentsVue from './components/mixins/MixinsMainComponents.vue';
 // import AuthBodyVue from './components/projectSetup/layout/authLayout/AuthBody.vue';
 // import BodyContentVue from './components/projectSetup/layout/BodyContent.vue';
 // import RoutingMethodMainVue from './components/routingMethods/RoutingMethodMain.vue';
@@ -104,12 +106,13 @@ export default {
     // BodyContentVue,
     // AuthBodyVue
     // RoutingMethodMainVue
-    BootstrapProjectMainComponentVue
-  },
-  computed: {
-    isAuthPage() {
-      return ['login', 'registor', 'forgot_password'].includes(this.$route.name);
-    }
+    // BootstrapProjectMainComponentVue
+    MixinsMainComponentsVue
   }
+  // computed: {
+  //   isAuthPage() {
+  //     return ['login', 'registor', 'forgot_password'].includes(this.$route.name);
+  //   }
+  // }
 };
 </script>
