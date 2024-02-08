@@ -7,13 +7,6 @@
           <div class="col-12">
             <div class="page-title-box d-flex align-items-center justify-content-between">
               <h4 class="mb-0">Basic Elements</h4>
-
-              <div class="page-title-right">
-                <ol class="breadcrumb m-0">
-                  <li class="breadcrumb-item"><a href="javascript: void(0);">Forms</a></li>
-                  <li class="breadcrumb-item active">Basic Elements</li>
-                </ol>
-              </div>
             </div>
           </div>
         </div>
@@ -26,71 +19,90 @@
                 <h4 class="card-title">Form layouts</h4>
                 <div class="row">
                   <div class="col-xl-6 mt-4">
-                    <form>
+                    <Form @submit="onSubmit" :validation-schema="schema">
                       <div class="row">
                         <div class="col-md-12">
                           <div class="form-floating mb-3">
-                            <label for="role_id">Select Role</label><br />
                             <Field name="role_id" as="select" class="form-select">
                               <option value="">Select Role</option>
                               <option v-for="role in users" :key="role.id" :value="role.id">{{ role.name }}</option>
                             </Field>
-                            <ErrorMessage name="role_id" />
-                            <label for="floatingSelectGrid">Works with selects</label>
+                            <ErrorMessage name="role_id" class="text-danger" />
                           </div>
                         </div>
                       </div>
 
                       <div class="mb-3">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="floatingCheck" />
-                          <label class="form-check-label" for="floatingCheck"> Check me out </label>
-                        </div>
                         <div
                           v-for="(modulePermission, index) in dataBasePermission"
                           :key="index"
                           :for="modulePermission"
+                          class="mb-3"
                         >
-                          <label>
-                            {{ index }}
-                          </label>
-                          <p>
-                            <label
-                              v-for="permission in modulePermission"
-                              :key="permission.id"
-                              :for="index + '_' + permission.name"
-                            >
-                              <Field
-                                type="checkbox"
-                                name="permissions"
-                                :value="index + '_' + permission.name"
-                                :id="index + '_' + permission.name"
-                              />
-                              {{ permission.name }}
-                            </label>
-                          </p>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <label class="form-check-label" for="floatingCheck">
+                                {{ index }}
+                              </label>
+                            </div>
+                            <div class="form-check col-md-12">
+                              <label
+                                v-for="permission in modulePermission"
+                                :key="permission.id"
+                                :for="index + '_' + permission.name"
+                                class="form-check-label mx-4"
+                              >
+                                <Field
+                                  type="checkbox"
+                                  name="permissions"
+                                  :value="index + '_' + permission.name"
+                                  :id="index + '_' + permission.name"
+                                  class="form-check-input"
+                                />
+                                {{ permission.name }}
+                              </label>
+                            </div>
+                          </div>
                         </div>
-                        <ErrorMessage name="permissions" /><br />
+                        <ErrorMessage name="permissions" class="text-danger" /><br />
                       </div>
                       <div class="d-flex flex-wrap gap-3">
                         <button type="submit" class="btn btn-primary waves-effect waves-light w-md">Submit</button>
                         <button type="reset" class="btn btn-outline-danger waves-effect waves-light w-md">Reset</button>
                       </div>
-                    </form>
+                    </Form>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- End Form Layout -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { BootstrapPermissionValidation } from './BootstrapPermissionValidation';
+import { Form, Field, ErrorMessage } from 'vee-validate';
+import PermissionAssingApiCallMixins from './permissionAssingMixins/PermissionAssingApiCallMixins.js';
 export default {
-  name: 'PermissionAssign'
+  name: 'PermissionAssign',
+  components: {
+    Form,
+    Field,
+    ErrorMessage
+  },
+  data() {
+    return {
+      schema: BootstrapPermissionValidation,
+      users: [],
+      permissions: [],
+      dataBasePermission: [],
+      toastMessage: '',
+      toastVariant: 'info'
+    };
+  },
+  mixins: [PermissionAssingApiCallMixins]
 };
 </script>
