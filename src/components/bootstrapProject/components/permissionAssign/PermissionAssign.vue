@@ -34,41 +34,39 @@
                           <Field name="role_name" type="hidden" v-model="roleName" />
                         </div>
                       </div>
-
-                      <div class="mb-3">
-                        <div
-                          v-for="(modulePermission, index) in dataBasePermission"
-                          :key="index"
-                          :for="modulePermission"
-                          class="mb-3"
+                      <div
+                        v-for="(modulePermission, index) in dataBasePermission"
+                        :key="index"
+                        :for="modulePermission"
+                        class="mb-3"
+                      >
+                        <label class="form-check-label" for="floatingCheck"> {{ index }} </label><br />
+                        <span
+                          class="col-md-4 form-check-label mx-4"
+                          v-for="permission in modulePermission"
+                          :key="permission.id"
+                          :for="index + '_' + permission.name"
                         >
-                          <div class="row">
-                            <div class="col-md-12">
-                              <label class="form-check-label" for="floatingCheck">
-                                {{ index }}
-                              </label>
-                            </div>
-                            <div class="form-check col-md-12">
-                              <label
-                                v-for="permission in modulePermission"
-                                :key="permission.id"
-                                :for="index + '_' + permission.name"
-                                class="form-check-label mx-4"
-                              >
-                                <Field
-                                  type="checkbox"
-                                  name="permissions"
-                                  :value="index + '_' + permission.name"
-                                  :id="index + '_' + permission.name"
-                                  class="form-check-input"
-                                />
-                                {{ permission.name }}
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                        <ErrorMessage name="permissions" class="text-danger" /><br />
+                          <Field
+                            v-slot="{ field }"
+                            name="permissions"
+                            type="checkbox"
+                            :value="index + '_' + permission.name"
+                          >
+                            <label>
+                              <input
+                                type="checkbox"
+                                name="permissions"
+                                v-bind="field"
+                                :value="index + '_' + permission.name"
+                                :checked="selectedPermissions.includes(index + '_' + permission.name)"
+                              />
+                              {{ permission.name }}
+                            </label>
+                          </Field>
+                        </span>
                       </div>
+                      <ErrorMessage name="permissions" class="text-danger" /><br />
                       <div class="d-flex flex-wrap gap-3">
                         <button type="submit" class="btn btn-primary waves-effect waves-light w-md">Submit</button>
                         <button type="reset" class="btn btn-outline-danger waves-effect waves-light w-md">Reset</button>
@@ -91,6 +89,9 @@ import { Form, Field, ErrorMessage } from 'vee-validate';
 import PermissionAssingApiCallMixins from './permissionAssingMixins/PermissionAssingApiCallMixins.js';
 export default {
   name: 'PermissionAssign',
+  props: {
+    rolePermission: {}
+  },
   components: {
     Form,
     Field,
@@ -101,6 +102,7 @@ export default {
       schema: BootstrapPermissionValidation,
       users: [],
       permissions: [],
+      selectedPermissions: [],
       dataBasePermission: [],
       toastMessage: '',
       toastVariant: 'info',
@@ -112,6 +114,17 @@ export default {
       const selectedOption = event.target.options[event.target.selectedIndex];
       const rolename = selectedOption.dataset.rolename;
       this.roleName = rolename;
+    }
+  },
+  watch: {
+    rolePermission: {
+      handler(newVal) {
+        if (newVal) {
+          console.log('newVal', newVal);
+          this.selectedPermissions = newVal.permissions;
+        }
+      },
+      immediate: true
     }
   },
   mixins: [PermissionAssingApiCallMixins]

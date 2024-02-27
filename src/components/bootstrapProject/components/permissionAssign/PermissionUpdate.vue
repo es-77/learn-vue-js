@@ -1,15 +1,21 @@
 <template>
-  <div class="main-content">
-    <div class="page-content">
-      <div class="container-fluid">
-        <p>PermissionUpdate</p>
-      </div>
-    </div>
-  </div>
+  <PermissionAssignVue v-bind:rolePermission="rolePermission" />
 </template>
 
 <script>
+import PermissionAssignVue from './PermissionAssign.vue';
+import GetRoleAndPermissionsApiMixins from './permissionAssingMixins/GetRoleAndPermissionsApiMixins.js';
 export default {
-  name: 'PermissionUpdate'
+  name: 'PermissionUpdate',
+  data() {
+    return {
+      rolePermission: [],
+      selectedPermission: []
+    };
+  },
+  components: {
+    PermissionAssignVue
+  },
+  mixins: [GetRoleAndPermissionsApiMixins]
 };
 </script>

@@ -254,6 +254,17 @@
         "permission_delete",
         "permission_update"
       ]
+    },
+    {
+      "id": "d8d6",
+      "role_id": "6649",
+      "role_name": "HR",
+      "permissions": [
+        "role_add",
+        "role_update",
+        "role_delete",
+        "role_view"
+      ]
     }
   ]
 }

@@ -134,7 +134,7 @@ let routesArray = [
     },
     {
         name: '/permission_update',
-        path: '/permission_update',
+        path: '/permission_update/:id',
         component: PermissionUpdate,
         meta: {
             is_auth: false
