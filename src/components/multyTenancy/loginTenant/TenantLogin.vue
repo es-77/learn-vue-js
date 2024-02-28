@@ -57,7 +57,7 @@ export default {
   },
   methods: {
     async onSubmit() {
-      const response = await this.sendData(this.users.subdomain, this.formData);
+      const response = await this.sendData('emmanueltest', this.formData);
       if (response?.data) {
         console.log(response.data);
         this.handleUpdateUserData(response.data);
