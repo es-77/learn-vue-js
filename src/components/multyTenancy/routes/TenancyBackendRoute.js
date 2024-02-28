@@ -14,6 +14,29 @@ function TenancyBackEndRoute() {
         tenantLogin: {
             login: `login`,
         },
+        tenantPasswordRetset: {
+            reset: `reset-password`,
+        },
+        tenantPasswordForget: {
+            forget: `forget-password`,
+        },
+        tenantAuthorization: {
+            getPermission: `permissions`,
+            getRoles: `roles`,
+        },
+        tenantUsers: {
+            list: `users`,
+            get: `users`,
+            create: `users`,
+            update: `users`,
+            delete: `users`,
+        },
+        tenantStatuses: {
+            get: `statuses`,
+        },
+        tenantDropdownList: {
+            get: `dropdown`,
+        },
         tenantPath: {
             path: tenantPath,
         },
