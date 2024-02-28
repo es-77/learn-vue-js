@@ -32,12 +32,14 @@
   <!-- <AuthBodyVue v-if="isAuthPage" />
   <BodyContentVue v-else /> -->
   <!-- <RoutingMethodMainVue /> -->
-  <BootstrapProjectMainComponentVue />
+  <!-- <BootstrapProjectMainComponentVue /> -->
   <!-- <MixinsMainComponentsVue /> -->
+  <MultyTenancyMainComponentVue />
 </template>
 
 <script>
-import BootstrapProjectMainComponentVue from './components/bootstrapProject/BootstrapProjectMainComponent.vue';
+// import BootstrapProjectMainComponentVue from './components/bootstrapProject/BootstrapProjectMainComponent.vue';
+import MultyTenancyMainComponentVue from './components/multyTenancy/MultyTenancyMainComponentVue.vue';
 // import MixinsMainComponentsVue from './components/mixins/MixinsMainComponents.vue';
 // import MainReuseableComponentsVue from './components/reuseableComponents/MainReuseableComponents.vue';
 // import AuthBodyVue from './components/projectSetup/layout/authLayout/AuthBody.vue';
@@ -107,8 +109,9 @@ export default {
     // BodyContentVue,
     // AuthBodyVue
     // RoutingMethodMainVue
-    BootstrapProjectMainComponentVue
+    // BootstrapProjectMainComponentVue
     // MixinsMainComponentsVue
+    MultyTenancyMainComponentVue
   }
 };
 </script>

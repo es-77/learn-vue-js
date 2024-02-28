@@ -4,15 +4,16 @@ import App from './App.vue';
 import { createPinia } from 'pinia'
 // import uppercase from './components/customDirectives/uppercase.js'
 // import canDirective from './components/customDirectives/can.js'
-import { permissionAccess } from './components/customDirectives/permissionAccess.js'
-import { uppercase } from './components/customDirectives/uppercase.js'
+// import { permissionAccess } from './components/customDirectives/permissionAccess.js'
+// import { uppercase } from './components/customDirectives/uppercase.js'
 // import FrontendRoutes from './components/projectSetup/FrontendRoutes';
 // import { usePermissionStore } from './components/projectSetup/projectStore/PermissionStore';
-import { hasPermission } from './components/projectSetup/directives/HasPermission';
+// import { hasPermission } from './components/projectSetup/directives/HasPermission';
 import 'vue-toast-notification/dist/theme-bootstrap.css';
-import ToastPlugin from 'vue-toast-notification';
-import BoostrapFrontEndRoute from './components/bootstrapProject/routes/BoostrapFrontEndRoute';
+// import ToastPlugin from 'vue-toast-notification';
+// import BoostrapFrontEndRoute from './components/bootstrapProject/routes/BoostrapFrontEndRoute';
 import 'simplebar/dist/simplebar.min.css';
+import TenantFrontEndRoute from './components/multyTenancy/routes/TenancyFrontEndRoute';
 
 // import "bootstrap/dist/css/bootstrap.min.css"
 // import "bootstrap"
@@ -55,12 +56,13 @@ app
     .use(pinia)
     // .use(routes)
     // .use(FrontendRoutes)
-    .use(BoostrapFrontEndRoute)
-    .directive('capitalize-text', uppercase) // Register the directive
-    .directive('hasPermission', hasPermission)
-    .directive('can', permissionAccess) // Register the directive
+    // .use(BoostrapFrontEndRoute)
+    .use(TenantFrontEndRoute)
+    // .directive('capitalize-text', uppercase) // Register the directive
+    // .directive('hasPermission', hasPermission)
+    // .directive('can', permissionAccess) // Register the directive
     // .provide('permissionStore', permissionStore) // Provide the store first
-    .use(ToastPlugin)
+    // .use(ToastPlugin)
     .mount('#app');
 
 
